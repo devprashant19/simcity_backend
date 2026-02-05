@@ -21,7 +21,8 @@ app.use("/api/leaderboard", leaderboardRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/point", pointRoutes);
 app.use("/api/power", powerRoutes);
-
+app.use("/api/game", require("./routes/game.routes"));
+app.use("/api/attack", require("./routes/attack.routes"));
 app.use("/api/battle", battleRoutes);
 app.use("/api/admin", adminRoutes);
 

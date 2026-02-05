@@ -62,3 +62,51 @@ exports.upgradePower = async (req, res) => {
     power: user.power
   });
 };
+
+exports.sendAid = async (req, res) => {
+  try {
+    const userId = req.user.id;
+    const { targetId } = req.body;
+
+    if (!targetId) return res.status(400).json({ message: "Target required" });
+    if (userId === targetId) return res.status(400).json({ message: "Cannot aid yourself" });
+
+    const user = await User.findById(userId);
+    const target = await User.findById(targetId);
+
+    if (!user || !target) return res.status(404).json({ message: "User not found" });
+
+    // Initialize if undefined
+    if (user.helpLeft === undefined) user.helpLeft = 3;
+
+    if (user.helpLeft <= 0) {
+      return res.status(400).json({ message: "No aid packages remaining!" });
+    }
+
+    // Cost Config
+    const AID_COST = 2; // Economy
+    const AID_GAIN = 1; // Economy 
+
+    if (user.power.economy < AID_COST) {
+      return res.status(400).json({ message: "Insufficient funds", required: AID_COST });
+    }
+
+    // Transaction
+    user.power.economy -= AID_COST;
+    user.helpLeft -= 1; // Decrement limit
+    target.power.economy += AID_GAIN;
+
+    await user.save();
+    await target.save();
+
+    res.json({
+      message: `Aid sent to ${target.username}. [${user.helpLeft} Left]`,
+      attackerStats: user.power, // Return updated stats for sender
+      helpLeft: user.helpLeft,
+      targetStats: target.power
+    });
+
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+};

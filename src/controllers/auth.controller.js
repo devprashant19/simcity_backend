@@ -7,7 +7,7 @@ const jwt = require("jsonwebtoken");
  */
 exports.firebaseAuth = async (req, res) => {
   try {
-    const { firebaseUid, username, email, password } = req.body;
+    const { firebaseUid, username, email, password, emailVerified } = req.body;
 
     if (!firebaseUid || !username || !email || !password) {
       return res.status(400).json({ message: "All fields required" });
@@ -17,6 +17,18 @@ exports.firebaseAuth = async (req, res) => {
 
     // 🔁 Already exists → LOGIN
     if (user) {
+      // Enforce Email Verification
+      if (!emailVerified) {
+        return res.status(403).json({ message: "Email not verified. Please check your inbox." });
+      }
+
+      // 🔹 BACKFILL DEFAULTS (for existing users)
+      if (user.attacksLeft === undefined || user.helpLeft === undefined) {
+        user.attacksLeft = user.attacksLeft ?? 3;
+        user.helpLeft = user.helpLeft ?? 3;
+        await user.save();
+      }
+
       const token = jwt.sign(
         { id: user._id, role: user.role },
         process.env.JWT_SECRET,
@@ -37,21 +49,27 @@ exports.firebaseAuth = async (req, res) => {
       firebaseUid,
       username,
       email,
-      password: hashedPassword
+      password: hashedPassword,
+      // Default schemas apply here, but explicit is fine too
+      attacksLeft: 3,
+      helpLeft: 3
     });
 
-    const token = jwt.sign(
-      { id: user._id, role: user.role },
-      process.env.JWT_SECRET,
-      { expiresIn: "7d" }
-    );
-
+    // NEW: Require Verification
     res.status(201).json({
-      message: "User created",
-      token,
-      user
+      message: "User created. Please verify your email before logging in.",
+      user: { ...user.toObject(), token: null } // No token
     });
   } catch (err) {
-    res.status(500).json({ error: err.message });
+    console.error("Firebase Auth Error:", err);
+    // Handle Duplicate Key Error (E11000)
+    if (err.code === 11000) {
+      const field = Object.keys(err.keyPattern)[0];
+      return res.status(400).json({
+        message: `${field.charAt(0).toUpperCase() + field.slice(1)} already exists. Please choose another.`
+      });
+    }
+    // Standardize error response
+    res.status(500).json({ message: err.message || "Internal Server Error" });
   }
 };

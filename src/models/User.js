@@ -21,6 +21,18 @@ const userSchema = new mongoose.Schema(
       infrastructure: { type: Number, default: 10 }
     },
 
+    // New Fields for Persistence
+    faction: {
+      type: String,
+      enum: ["Ninja", "Dwarfs", "Elves"],
+      default: null
+    },
+
+    currentQuestion: { type: String, default: null },
+
+    attacksLeft: { type: Number, default: 3 },
+    helpLeft: { type: Number, default: 3 },
+
     finished: { type: Boolean, default: false }
   },
   { timestamps: true }

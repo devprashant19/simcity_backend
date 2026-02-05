@@ -24,9 +24,7 @@ exports.infrastructureLeaderboard = async (req, res) => {
       leaderboard.push({
         rank,
         username: user.username,
-
         id: user._id,
-
         economy: user.power.economy,
         military: user.power.military,
         health: user.power.health,
