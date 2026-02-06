@@ -24,8 +24,8 @@ exports.firebaseAuth = async (req, res) => {
 
       // 🔹 BACKFILL DEFAULTS (for existing users)
       if (user.attacksLeft === undefined || user.helpLeft === undefined) {
-        user.attacksLeft = user.attacksLeft ?? 3;
-        user.helpLeft = user.helpLeft ?? 3;
+        user.attacksLeft = user.attacksLeft ?? 5;
+        user.helpLeft = user.helpLeft ?? 5;
         await user.save();
       }
 
@@ -50,9 +50,16 @@ exports.firebaseAuth = async (req, res) => {
       username,
       email,
       password: hashedPassword,
-      // Default schemas apply here, but explicit is fine too
-      attacksLeft: 3,
-      helpLeft: 3
+      // Randomize initial stats (10 to 50)
+      power: {
+        economy: Math.floor(Math.random() * (50 - 10 + 1)) + 10,
+        military: Math.floor(Math.random() * (50 - 10 + 1)) + 10,
+        health: Math.floor(Math.random() * (50 - 10 + 1)) + 10,
+        infrastructure: Math.floor(Math.random() * (50 - 10 + 1)) + 10
+      },
+      // Use Mongoose Defaults (defined in model) or explicit 5
+      attacksLeft: 5,
+      helpLeft: 5
     });
 
     // NEW: Require Verification

@@ -17,13 +17,15 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.use("/api/leaderboard", leaderboardRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/point", pointRoutes);
 app.use("/api/power", powerRoutes);
 app.use("/api/game", require("./routes/game.routes"));
 app.use("/api/attack", require("./routes/attack.routes"));
+app.use("/api/war", require("./routes/war.routes"));
 app.use("/api/battle", battleRoutes);
-app.use("/api/admin", adminRoutes);
+app.use("/admin", adminRoutes);
 
 module.exports = app;

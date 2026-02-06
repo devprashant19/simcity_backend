@@ -1,9 +1,9 @@
 const User = require("../models/User");
 
 const COST = {
-  military: 5,
-  infrastructure: 5,
-  health: 5
+  military: 1,
+  infrastructure: 1,
+  health: 1
 };
 
 exports.upgradePower = async (req, res) => {
@@ -84,8 +84,8 @@ exports.sendAid = async (req, res) => {
     }
 
     // Cost Config
-    const AID_COST = 2; // Economy
-    const AID_GAIN = 1; // Economy 
+    const AID_COST = 5; // Economy
+    const AID_GAIN = 8; // Economy (Boosted!)
 
     if (user.power.economy < AID_COST) {
       return res.status(400).json({ message: "Insufficient funds", required: AID_COST });

@@ -772,7 +772,7 @@
     "Q36": {
       "qid": "Q36",
       "type": "decision",
-      "text": "🏆 EVENT 3 COMPLETE — The council's decision defines the Dwarven Doctrine for this era. Proceed to the Final Trial or investigate a newly reported rich vein?",
+      "text": " The council's decision defines the Dwarven Doctrine for this era. Proceed to the Final Trial or investigate a newly reported rich vein?",
       "options": [
         {
           "text": "Proceed to the Final Trial (riddles)",
@@ -799,7 +799,7 @@
     "R1": {
       "qid": "R1",
       "type": "input",
-      "text": "🧠 RIDDLE 1: I increase when you build nothing, decrease when you build too much, and disappear when you build blindly.",
+      "text": "I increase when you build nothing, decrease when you build too much, and disappear when you build blindly.",
       "correctAnswer": "STABILITY",
       "effects": {
         "economy": 5,
@@ -812,7 +812,7 @@
     "R2": {
       "qid": "R2",
       "type": "input",
-      "text": "🧠 RIDDLE 2 (TRANSPORT): In our city, nothing moves without me, yet no one ever travels on me. When I am misjudged, traffic jams appear underground. What was misjudged?",
+      "text": " In our city, nothing moves without me, yet no one ever travels on me. When I am misjudged, traffic jams appear underground. What was misjudged?",
       "correctAnswer": "CAPACITY",
       "effects": {
         "economy": 5,
@@ -825,7 +825,7 @@
     "R3": {
       "qid": "R3",
       "type": "input",
-      "text": "🧠 RIDDLE 3 (DRAINAGE): Water never asks permission. It follows me every time. Build me wrong, and homes flood. Build me right, and no one notices. What am I?",
+      "text": " Water never asks permission. It follows me every time. Build me wrong, and homes flood. Build me right, and no one notices. What am I?",
       "correctAnswer": "GRADIENT",
       "effects": {
         "economy": 5,
@@ -838,7 +838,7 @@
     "R4": {
       "qid": "R4",
       "type": "input",
-      "text": "🧠 RIDDLE 4 (CITY MOVEMENT): Guards widen me to calm trade. Narrow me, and control becomes easier. I decide who meets whom. What am I?",
+      "text": " Guards widen me to calm trade. Narrow me, and control becomes easier. I decide who meets whom. What am I?",
       "correctAnswer": "ROUTES",
       "effects": {
         "economy": 5,
@@ -851,7 +851,7 @@
     "R5": {
       "qid": "R5",
       "type": "input",
-      "text": "🧠 RIDDLE 5: The Dwarves worshipped ancestors, but feared me more than gods, because I never forgive.",
+      "text": " The Dwarves worshipped ancestors, but feared me more than gods, because I never forgive.",
       "correctAnswer": "GRAVITY",
       "effects": {
         "economy": 5,
@@ -864,7 +864,7 @@
     "R6": {
       "qid": "R6",
       "type": "input",
-      "text": "🧠 RIDDLE 6: I move slower than armies, faster than laws, and once I start, even kings evacuate.",
+      "text": " I move slower than armies, faster than laws, and once I start, even kings evacuate.",
       "correctAnswer": "LANDSLIDE",
       "effects": {
         "economy": 5,
@@ -877,7 +877,7 @@
     "R7": {
       "qid": "R7",
       "type": "input",
-      "text": "🧠 RIDDLE 7: SimCity rewards me early, punishes me late, and hides my limit completely.",
+      "text": " SimCity rewards me early, punishes me late, and hides my limit completely.",
       "correctAnswer": "DENSITY",
       "effects": {
         "economy": 5,
@@ -890,7 +890,7 @@
     "R8": {
       "qid": "R8",
       "type": "input",
-      "text": "🧠 RIDDLE 8: The Dwarves blamed workers for me, generals blamed spies, but engineers blamed time.",
+      "text": " The Dwarves blamed workers for me, generals blamed spies, but engineers blamed time.",
       "correctAnswer": "FATIGUE",
       "effects": {
         "economy": 5,
@@ -903,7 +903,7 @@
     "R9": {
       "qid": "R9",
       "type": "input",
-      "text": "🧠 RIDDLE 9: I am strongest when invisible, weakest when displayed, and fatal when ignored.",
+      "text": " I am strongest when invisible, weakest when displayed, and fatal when ignored.",
       "correctAnswer": "LOAD",
       "effects": {
         "economy": 5,
@@ -916,7 +916,7 @@
     "R10": {
       "qid": "R10",
       "type": "input",
-      "text": "🧠 RIDDLE 10: In peace I am a statistic. In war I am a weapon. In collapse I am irrelevant.",
+      "text": " In peace I am a statistic. In war I am a weapon. In collapse I am irrelevant.",
       "correctAnswer": "POPULATION",
       "effects": {
         "economy": 5,
@@ -929,7 +929,7 @@
     "R11": {
       "qid": "R11",
       "type": "input",
-      "text": "🧠 RIDDLE 11: The city grew richer every year, yet poorer every decade. I was never taxed.",
+      "text": " The city grew richer every year, yet poorer every decade. I was never taxed.",
       "correctAnswer": "MAINTENANCE",
       "effects": {
         "economy": 5,
@@ -942,7 +942,7 @@
     "R12": {
       "qid": "R12",
       "type": "input",
-      "text": "🧠 RIDDLE 12: I increase economy today, decrease health tomorrow, and rewrite history next generation.",
+      "text": " I increase economy today, decrease health tomorrow, and rewrite history next generation.",
       "correctAnswer": "POLLUTION",
       "effects": {
         "economy": 5,
@@ -955,7 +955,7 @@
     "R13": {
       "qid": "R13",
       "type": "input",
-      "text": "🧠 RIDDLE 13: The Dwarves sealed me once, and the city survived. They opened me again, and legends were born—or buried.",
+      "text": " The Dwarves sealed me once, and the city survived. They opened me again, and legends were born—or buried.",
       "correctAnswer": "FAULT LINE",
       "effects": {
         "economy": 5,
@@ -968,7 +968,7 @@
     "R14": {
       "qid": "R14",
       "type": "input",
-      "text": "🧠 RIDDLE 14: SimCity lets you pause me, but reality never does. Dwarves respect me more than kings.",
+      "text": " SimCity lets you pause me, but reality never does. Dwarves respect me more than kings.",
       "correctAnswer": "TIME",
       "effects": {
         "economy": 5,
@@ -981,7 +981,7 @@
     "R15": {
       "qid": "R15",
       "type": "input",
-      "text": "🧠 RIDDLE 15: I do not exist in maps, only in meetings, yet wars are fought because of me.",
+      "text": " I do not exist in maps, only in meetings, yet wars are fought because of me.",
       "correctAnswer": "POLICY",
       "effects": {
         "economy": 5,
@@ -994,7 +994,7 @@
     "R16": {
       "qid": "R16",
       "type": "input",
-      "text": "🧠 RIDDLE 16: The deeper the city went, the smaller I became, until progress stopped entirely.",
+      "text": " The deeper the city went, the smaller I became, until progress stopped entirely.",
       "correctAnswer": "MARGIN OF ERROR",
       "effects": {
         "economy": 5,
@@ -1007,7 +1007,7 @@
     "R17": {
       "qid": "R17",
       "type": "input",
-      "text": "🧠 RIDDLE 17: The council ignored me because I had no voice, but when I finally spoke, the mountain answered.",
+      "text": " The council ignored me because I had no voice, but when I finally spoke, the mountain answered.",
       "correctAnswer": "PRESSURE",
       "effects": {
         "economy": 5,
@@ -1020,7 +1020,7 @@
     "R18": {
       "qid": "R18",
       "type": "input",
-      "text": "🧠 RIDDLE 18: SimCity calls me a slider. The Dwarves called me a curse. Engineers called me inevitable.",
+      "text": " SimCity calls me a slider. The Dwarves called me a curse. Engineers called me inevitable.",
       "correctAnswer": "TRADEOFF",
       "effects": {
         "economy": 5,
@@ -1033,7 +1033,7 @@
     "R19": {
       "qid": "R19",
       "type": "input",
-      "text": "🧠 RIDDLE 19: I grow faster than cities, slower than disasters, and never where planned.",
+      "text": " I grow faster than cities, slower than disasters, and never where planned.",
       "correctAnswer": "SPRAWL",
       "effects": {
         "economy": 5,
@@ -1046,7 +1046,7 @@
     "R20": {
       "qid": "R20",
       "type": "input",
-      "text": "🧠 RIDDLE 20 (FINAL BOSS): When all four stats are high, I decide whether the city lives. When all four are low, I decide whether it dies quietly or violently.",
+      "text": " When all four stats are high, I decide whether the city lives. When all four are low, I decide whether it dies quietly or violently.",
       "correctAnswer": "GOVERNANCE",
       "effects": {
         "economy": 5,
@@ -1060,7 +1060,7 @@
     "E1_FAIL": {
       "qid": "E1_FAIL",
       "type": "input",
-      "text": "👎 HARSH CRACKDOWN — The miners revolt in secret; unrest spreads. To accept your fate, answer: What is the sound of a kingdom falling? (1 word)",
+      "text": " HARSH CRACKDOWN — The miners revolt in secret; unrest spreads. To accept your fate, answer: What is the sound of a kingdom falling? (1 word)",
       "correctAnswer": "SILENCE",
       "effects": {
         "economy": -10,

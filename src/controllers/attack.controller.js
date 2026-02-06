@@ -24,18 +24,18 @@ exports.attackUser = async (req, res) => {
         }
 
         // Check Military Requirements
-        if (attacker.power.military < 5) {
-            return res.status(400).json({ message: "You need at least 5 Military power to launch an attack!" });
+        if (attacker.power.military < 10) {
+            return res.status(400).json({ message: "You need at least 10 Military power to launch an attack!" });
         }
 
         // Combat Logic
         // Attacker Costs/Rewards
-        attacker.power.military -= 2;
-        attacker.power.economy += 1;
+        attacker.power.military -= 5;
+        attacker.power.economy += 8;
         attacker.attacksLeft -= 1; // Decrement limit
 
         // Defender Penalties
-        defender.power.infrastructure -= 3;
+        defender.power.infrastructure -= 8;
 
         // Boundary Checks (Min 0)
         if (defender.power.infrastructure < 0) defender.power.infrastructure = 0;

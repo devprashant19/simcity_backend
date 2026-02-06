@@ -30,8 +30,8 @@ const userSchema = new mongoose.Schema(
 
     currentQuestion: { type: String, default: null },
 
-    attacksLeft: { type: Number, default: 3 },
-    helpLeft: { type: Number, default: 3 },
+    attacksLeft: { type: Number, default: 5 },
+    helpLeft: { type: Number, default: 5 },
 
     finished: { type: Boolean, default: false }
   },
