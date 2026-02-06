@@ -1,0 +1,639 @@
+{
+  "startQid": "Q1",
+  "questions": {
+
+    "Q1": {
+      "qid": "Q1",
+      "type": "decision",
+      "text": "You are welcomed as the ruling elf council of this sacred city. what will be the first priority of ur rule",
+      "options": [
+        {
+          "text": "People",
+          "effects": { "health": 15, "economy": -5, "infrastructure": 5, "military": -5 },
+          "nextQid": "Q4"
+        },
+        {
+          "text": "Nature",
+          "effects": { "infrastructure": 15, "health": 5, "economy": -10, "military": -5 },
+          "nextQid": "Q2"
+        },
+        {
+          "text": "Power",
+          "effects": { "military": 15, "economy": -5, "health": -10, "infrastructure": -5 },
+          "nextQid": "Q3"
+        }
+      ]
+    },
+
+    "Q2": {
+      "qid": "Q2",
+      "type": "decision",
+      "text": "At dawn, the elders bring you to a sacred grove. One ancient tree bleeds silver sap.",
+      "options": [
+        {
+          "text": "Replace it with magic",
+          "effects": { "infrastructure": 10, "economy": -5, "health": -5, "military": 0 },
+          "nextQid": "Q8"
+        },
+        {
+          "text": "Harvest carefully",
+          "effects": { "economy": 15, "infrastructure": -10, "health": -5, "military": 0 },
+          "nextQid": "Q9"
+        },
+        {
+          "text": "Preserve the tree",
+          "effects": { "infrastructure": 10, "health": 10, "economy": -10, "military": -5 },
+          "nextQid": "Q10"
+        }
+      ]
+    },
+
+    "Q3": {
+      "qid": "Q3",
+      "type": "decision",
+      "text": "Beneath the council hall lies the sealed archive. It contains magic banned since the First Age.",
+      "options": [
+        {
+          "text": "Open with limit",
+          "effects": { "infrastructure": 10, "military": 5, "health": -5, "economy": 0 },
+          "nextQid": "Q12"
+        },
+        {
+          "text": "Open fully",
+          "effects": { "military": 15, "infrastructure": 10, "health": -10, "economy": 5 },
+          "nextQid": "Q12"
+        },
+        {
+          "text": "Seal forever",
+          "effects": { "military": 5, "health": 10, "economy": -5, "infrastructure": -10 },
+          "nextQid": "Q11"
+        }
+      ]
+    },
+
+    "Q4": {
+      "qid": "Q4",
+      "type": "decision",
+      "text": "Your village grows faster than expected. Homes now press against sacred roots.",
+      "options": [
+        {
+          "text": "Limit population growth",
+          "effects": { "health": -5, "infrastructure": 10, "economy": -5, "military": 0 },
+          "nextQid": "Q6"
+        },
+        {
+          "text": "Expand into forest",
+          "effects": { "economy": 10, "infrastructure": -10, "health": -5, "military": 0 },
+          "nextQid": "Q7"
+        },
+        {
+          "text": "Build Upwards (Elven towers)",
+          "effects": { "infrastructure": 15, "economy": 5, "health": -5, "military": -5 },
+          "nextQid": "Q5"
+        }
+      ]
+    },
+
+    "Q5": {
+      "qid": "Q5",
+      "type": "decision",
+      "text": "Rapid vertical construction led to a tower collapsing during night winds.",
+      "options": [
+        {
+          "text": "Reinforce magically",
+          "effects": { "infrastructure": 10, "health": 5, "economy": -5, "military": 0 },
+          "nextQid": "Q13"
+        },
+        {
+          "text": "Cover it up",
+          "effects": { "economy": 5, "health": -10, "infrastructure": -5, "military": 0 },
+          "nextQid": "Q13"
+        },
+        {
+          "text": "Pause all construction",
+          "effects": { "health": 15, "economy": -10, "infrastructure": -5, "military": 0 },
+          "nextQid": "Q13"
+        }
+      ]
+    },
+
+    "Q6": {
+      "qid": "Q6",
+      "type": "decision",
+      "text": "After implementing the policy, families started hiding newborns.",
+      "options": [
+        {
+          "text": "Punish offenders",
+          "effects": { "military": 10, "health": -15, "economy": -5, "infrastructure": 0 },
+          "nextQid": "Q13"
+        },
+        {
+          "text": "Relax the rule",
+          "effects": { "health": 10, "economy": -5, "military": -5, "infrastructure": 0 },
+          "nextQid": "Q13"
+        },
+        {
+          "text": "Provide incentives",
+          "effects": { "health": 15, "economy": -10, "infrastructure": 5, "military": -5 },
+          "nextQid": "Q13"
+        }
+      ]
+    },
+
+    "Q7": {
+      "qid": "Q7",
+      "type": "decision",
+      "text": "Forest spirits now block paths and scare children.",
+      "options": [
+        {
+          "text": "Negotiate with spirits",
+          "effects": { "health": 10, "infrastructure": 5, "economy": -5, "military": -5 },
+          "nextQid": "Q13"
+        },
+        {
+          "text": "Increase guards",
+          "effects": { "military": 15, "health": -5, "economy": -5, "infrastructure": 0 },
+          "nextQid": "Q13"
+        },
+        {
+          "text": "Offer forest compensation",
+          "effects": { "infrastructure": 10, "economy": -10, "health": 5, "military": -5 },
+          "nextQid": "Q13"
+        }
+      ]
+    },
+
+    "Q8": {
+      "qid": "Q8",
+      "type": "decision",
+      "text": "Heavy magic drains the mages; the land trembles.",
+      "options": [
+        {
+          "text": "Halt magic usage",
+          "effects": { "health": 10, "infrastructure": -10, "economy": -5, "military": 0 },
+          "nextQid": "Q13"
+        },
+        {
+          "text": "Drain forest energy",
+          "effects": { "infrastructure": 15, "health": -15, "economy": 5, "military": 0 },
+          "nextQid": "Q13"
+        },
+        {
+          "text": "Recruit more elf mages",
+          "effects": { "infrastructure": 15, "economy": -10, "health": -5, "military": 0 },
+          "nextQid": "Q13"
+        }
+      ]
+    },
+
+    "Q9": {
+      "qid": "Q9",
+      "type": "decision",
+      "text": "Partial cutting destabilizes magic; sickness spreads.",
+      "options": [
+        {
+          "text": "Use magic to cleanse",
+          "effects": { "health": 10, "infrastructure": -5, "economy": -5, "military": 0 },
+          "nextQid": "Q13"
+        },
+        {
+          "text": "Quarantine affected homes",
+          "effects": { "health": 10, "economy": -5, "infrastructure": 0, "military": 0 },
+          "nextQid": "Q13"
+        },
+        {
+          "text": "Sell the wood secretly",
+          "effects": { "economy": 15, "health": -10, "infrastructure": -5, "military": 0 },
+          "nextQid": "Q13"
+        }
+      ]
+    },
+
+    "Q10": {
+      "qid": "Q10",
+      "type": "decision",
+      "text": "Food drops as the tree is preserved; children go hungry.",
+      "options": [
+        {
+          "text": "Ask spirits for aid",
+          "effects": { "health": 5, "infrastructure": 10, "economy": -5, "military": 0 },
+          "nextQid": "Q13"
+        },
+        {
+          "text": "Share forest fruits",
+          "effects": { "health": 10, "economy": 5, "infrastructure": 5, "military": -5 },
+          "nextQid": "Q13"
+        },
+        {
+          "text": "Reduce rations",
+          "effects": { "health": -15, "economy": 5, "military": 5, "infrastructure": 0 },
+          "nextQid": "Q13"
+        }
+      ]
+    },
+
+    "Q11": {
+      "qid": "Q11",
+      "type": "decision",
+      "text": "With forbidden magic sealed, disadvantages appear.",
+      "options": [
+        {
+          "text": "Seek alternative methods",
+          "effects": { "infrastructure": 10, "economy": -5, "health": 5, "military": -5 },
+          "nextQid": "Q13"
+        },
+        {
+          "text": "Strengthen defenses",
+          "effects": { "military": 15, "economy": -10, "health": -5, "infrastructure": 0 },
+          "nextQid": "Q13"
+        },
+        {
+          "text": "Ask forest spirits",
+          "effects": { "infrastructure": 10, "health": 5, "economy": -5, "military": -5 },
+          "nextQid": "Q13"
+        }
+      ]
+    },
+
+    "Q12": {
+      "qid": "Q12",
+      "type": "decision",
+      "text": "The sealed box is opened; magic spreads uncontrollably.",
+      "options": [
+        {
+          "text": "Enforce limits",
+          "effects": { "military": 10, "health": -5, "economy": -5, "infrastructure": 0 },
+          "nextQid": "Q13"
+        },
+        {
+          "text": "Let power flow",
+          "effects": { "infrastructure": 15, "economy": 5, "health": -10, "military": 0 },
+          "nextQid": "Q13"
+        },
+        {
+          "text": "Seal it again and sink it",
+          "effects": { "military": 15, "infrastructure": -10, "economy": -5, "health": 0 },
+          "nextQid": "Q13"
+        }
+      ]
+    },
+
+    "Q13": {
+      "qid": "Q13",
+      "type": "decision",
+      "text": "Eleven canals carry moonwater; blockages cause disease in lower districts.",
+      "options": [
+        {
+          "text": "Redirect water into forest soil",
+          "effects": { "infrastructure": 3, "health": 1, "economy": -1, "military": 0 },
+          "nextQid": "Q14"
+        },
+        {
+          "text": "Widen canals with stone",
+          "effects": { "infrastructure": 3, "economy": -2, "health": 1, "military": 0 },
+          "nextQid": "Q14"
+        },
+        {
+          "text": "Use magical filters",
+          "effects": { "health": 2, "infrastructure": 2, "economy": -1, "military": 0 },
+          "nextQid": "Q14"
+        }
+      ]
+    },
+
+    "Q14": {
+      "qid": "Q14",
+      "type": "decision",
+      "text": "Citizen travel relies on foot-grown pathways; delays hurt trade.",
+      "options": [
+        {
+          "text": "Expand rootways deeper into forest",
+          "effects": { "economy": 10, "infrastructure": -10, "health": -5, "military": 0 },
+          "nextQid": "Q15"
+        },
+        {
+          "text": "Introduce beast-drawn pathways",
+          "effects": { "economy": 10, "health": 5, "infrastructure": 5, "military": -5 },
+          "nextQid": "Q16"
+        },
+        {
+          "text": "Restrict movement at peak hours",
+          "effects": { "health": 5, "economy": -10, "military": 5, "infrastructure": 0 },
+          "nextQid": "Q17"
+        }
+      ]
+    },
+
+    "Q15": {
+      "qid": "Q15",
+      "type": "decision",
+      "text": "Forest spirits protest; roots twist and block paths.",
+      "options": [
+        {
+          "text": "Negotiate through rituals",
+          "effects": { "infrastructure": 15, "health": 5, "economy": -5, "military": -5 },
+          "nextQid": "Q18"
+        },
+        {
+          "text": "Ignore and reinforce paths",
+          "effects": { "infrastructure": 10, "economy": 5, "health": -5, "military": -5 },
+          "nextQid": "Q18"
+        },
+        {
+          "text": "Deploy guards to protect workers",
+          "effects": { "military": 15, "economy": -5, "health": -5, "infrastructure": 0 },
+          "nextQid": "Q18"
+        }
+      ]
+    },
+
+    "Q16": {
+      "qid": "Q16",
+      "type": "decision",
+      "text": "Beasts increase speed but create chaos in markets.",
+      "options": [
+        {
+          "text": "Train beasts with elf handlers",
+          "effects": { "economy": 10, "health": 5, "infrastructure": 5, "military": -5 },
+          "nextQid": "Q18"
+        },
+        {
+          "text": "Replace beasts with magical carts",
+          "effects": { "infrastructure": 15, "economy": 5, "health": -5, "military": 0 },
+          "nextQid": "Q18"
+        },
+        {
+          "text": "Let people manage beasts themselves",
+          "effects": { "economy": 5, "health": -10, "military": 5, "infrastructure": 0 },
+          "nextQid": "Q18"
+        }
+      ]
+    },
+
+    "Q17": {
+      "qid": "Q17",
+      "type": "decision",
+      "text": "Order improves, but public anger grows.",
+      "options": [
+        {
+          "text": "Offer tax relief",
+          "effects": { "economy": 10, "health": -5, "military": 0, "infrastructure": 0 },
+          "nextQid": "Q18"
+        },
+        {
+          "text": "Lift restrictions partially",
+          "effects": { "economy": 5, "health": -5, "infrastructure": 5, "military": 0 },
+          "nextQid": "Q18"
+        },
+        {
+          "text": "Distribute money among citizens",
+          "effects": { "health": 10, "economy": -10, "military": -5, "infrastructure": 0 },
+          "nextQid": "Q18"
+        }
+      ]
+    },
+
+    "Q18": {
+      "qid": "Q18",
+      "type": "input",
+      "text": "RIDDLE: I increase when you build nothing, decrease when you build too much, and disappear when you build blindly.",
+      "correctAnswer": "Stability",
+      "effects": { "health": 5, "economy": 5, "infrastructure": 5, "military": 5 },
+      "nextQid": "Q19"
+    },
+
+    "Q19": {
+      "qid": "Q19",
+      "type": "input",
+      "text": "A witch says: 'If the mage lies, I tell truth. If the mage tells truth, I lie.' Who is telling the truth?",
+      "correctAnswer": "Mage",
+      "effects": { "health": 5, "economy": 5, "infrastructure": 5, "military": 5 },
+      "nextQid": "Q20"
+    },
+
+    "Q20": {
+      "qid": "Q20",
+      "type": "input",
+      "text": "A mage predicts rain with 100% accuracy but speaks only on dry days. Today he speaks. Will it rain tomorrow?",
+      "correctAnswer": "Yes",
+      "effects": { "health": 5, "economy": 5, "infrastructure": 5, "military": 5 },
+      "nextQid": "Q21"
+    },
+
+    "Q21": {
+      "qid": "Q21",
+      "type": "input",
+      "text": "A spell doubles crops each day but halves soil fertility. When should the spell stop?",
+      "correctAnswer": "Day one",
+      "effects": { "health": 5, "economy": 5, "infrastructure": 5, "military": 5 },
+      "nextQid": "Q22"
+    },
+
+    "Q22": {
+      "qid": "Q22",
+      "type": "input",
+      "text": "A witch offers a spell increasing harvest by 20% but soil drops yearly. What was overlooked?",
+      "correctAnswer": "Compounding",
+      "effects": { "health": 5, "economy": 5, "infrastructure": 5, "military": 5 },
+      "nextQid": "Q23"
+    },
+
+    "Q23": {
+      "qid": "Q23",
+      "type": "input",
+      "text": "Only wealthy traders benefit from equal roads. What failed?",
+      "correctAnswer": "Distribution",
+      "effects": { "health": 5, "economy": 5, "infrastructure": 5, "military": 5 },
+      "nextQid": "Q24"
+    },
+
+    "Q24": {
+      "qid": "Q24",
+      "type": "input",
+      "text": "A small imbalance collapses the system. What assumption was wrong?",
+      "correctAnswer": "Independence",
+      "effects": { "health": 5, "economy": 5, "infrastructure": 5, "military": 5 },
+      "nextQid": "Q25"
+    },
+
+    "Q25": {
+      "qid": "Q25",
+      "type": "input",
+      "text": "Villages defect slightly and all weaken. What broke?",
+      "correctAnswer": "Cooperation",
+      "effects": { "health": 5, "economy": 5, "infrastructure": 5, "military": 5 },
+      "nextQid": "Q26"
+    },
+
+    "Q26": {
+      "qid": "Q26",
+      "type": "input",
+      "text": "Closing one bridge collapses trade. What property was misunderstood?",
+      "correctAnswer": "Dependency",
+      "effects": { "health": 5, "economy": 5, "infrastructure": 5, "military": 5 },
+      "nextQid": "Q27"
+    },
+
+    "Q27": {
+      "qid": "Q27",
+      "type": "input",
+      "text": "One village takes more fruit; all weaken later. What was violated?",
+      "correctAnswer": "Proportion",
+      "effects": { "health": 5, "economy": 5, "infrastructure": 5, "military": 5 },
+      "nextQid": "Q28"
+    },
+
+    "Q28": {
+      "qid": "Q28",
+      "type": "input",
+      "text": "Poor maintenance erases road gains. What ensures returns?",
+      "correctAnswer": "Maintenance",
+      "effects": { "health": 5, "economy": 5, "infrastructure": 5, "military": 5 },
+      "nextQid": "Q29"
+    },
+
+    "Q29": {
+      "qid": "Q29",
+      "type": "input",
+      "text": "Flood predictions are uncertain. What do you calculate?",
+      "correctAnswer": "Probability",
+      "effects": { "health": 5, "economy": 5, "infrastructure": 5, "military": 5 },
+      "nextQid": "Q30"
+    },
+
+    "Q30": {
+      "qid": "Q30",
+      "type": "input",
+      "text": "The Sacred Tree grows only in peace. What feeds it?",
+      "correctAnswer": "Stability",
+      "effects": { "health": 5, "economy": 5, "infrastructure": 5, "military": 5 },
+      "nextQid": "Q31"
+    },
+
+    "Q31": {
+      "qid": "Q31",
+      "type": "input",
+      "text": "A demon lies on even days. Today he says 'I lie today'. What day is it?",
+      "correctAnswer": "Even",
+      "effects": { "health": 5, "economy": 5, "infrastructure": 5, "military": 5 },
+      "nextQid": "Q32"
+    },
+
+    "Q32": {
+      "qid": "Q32",
+      "type": "input",
+      "text": "Peace exists only if the army trains, but training happens only in peace. Is peace possible?",
+      "correctAnswer": "No",
+      "effects": { "health": 5, "economy": 5, "infrastructure": 5, "military": 5 },
+      "nextQid": "Q33"
+    },
+
+    "Q33": {
+      "qid": "Q33",
+      "type": "input",
+      "text": "Walls double every decade; city is safe but bankrupt. What was ignored?",
+      "correctAnswer": "Sustainability",
+      "effects": { "health": 5, "economy": 5, "infrastructure": 5, "military": 5 },
+      "nextQid": "Q34"
+    },
+
+    "Q34": {
+      "qid": "Q34",
+      "type": "input",
+      "text": "A healer speeds up but recovery falls. What trade-off was missed?",
+      "correctAnswer": "Quality",
+      "effects": { "health": 5, "economy": 5, "infrastructure": 5, "military": 5 },
+      "nextQid": "Q35"
+    },
+
+    "Q35": {
+      "qid": "Q35",
+      "type": "input",
+      "text": "A king taxes only the rich; trade vanishes. What was missed?",
+      "correctAnswer": "Incentives",
+      "effects": { "health": 5, "economy": 5, "infrastructure": 5, "military": 5 },
+      "nextQid": "Q36"
+    },
+
+    "Q36": {
+      "qid": "Q36",
+      "type": "input",
+      "text": "A machine fixes all tools; craftsmen forget skills. What was lost?",
+      "correctAnswer": "Resilience",
+      "effects": { "health": 5, "economy": 5, "infrastructure": 5, "military": 5 },
+      "nextQid": "Q37"
+    },
+
+    "Q37": {
+      "qid": "Q37",
+      "type": "input",
+      "text": "Two villages slowly overuse a well. What caused collapse?",
+      "correctAnswer": "Accumulation",
+      "effects": { "health": 5, "economy": 5, "infrastructure": 5, "military": 5 },
+      "nextQid": "Q38"
+    },
+
+    "Q38": {
+      "qid": "Q38",
+      "type": "input",
+      "text": "A fortress resists known attacks but falls to unknown ones. What was ignored?",
+      "correctAnswer": "Uncertainty",
+      "effects": { "health": 5, "economy": 5, "infrastructure": 5, "military": 5 },
+      "nextQid": "Q39"
+    },
+
+    "Q39": {
+      "qid": "Q39",
+      "type": "input",
+      "text": "Perfect knowledge delays all action. What trap is this?",
+      "correctAnswer": "Perfection",
+      "effects": { "health": 5, "economy": 5, "infrastructure": 5, "military": 5 },
+      "nextQid": "Q40"
+    },
+
+    "Q40": {
+      "qid": "Q40",
+      "type": "input",
+      "text": "A road shortens all journeys but markets cluster near capital. What force acted?",
+      "correctAnswer": "Gravity",
+      "effects": { "health": 5, "economy": 5, "infrastructure": 5, "military": 5 },
+      "nextQid": "Q41"
+    },
+
+    "Q41": {
+      "qid": "Q41",
+      "type": "input",
+      "text": "A prophecy fades if obeyed and comes true if ignored. What kind is it?",
+      "correctAnswer": "Self-fulfilling",
+      "effects": { "health": 5, "economy": 5, "infrastructure": 5, "military": 5 },
+      "nextQid": "Q42"
+    },
+
+    "Q42": {
+      "qid": "Q42",
+      "type": "input",
+      "text": "Stored grain causes people to waste food. What behavior caused this?",
+      "correctAnswer": "Complacency",
+      "effects": { "health": 5, "economy": 5, "infrastructure": 5, "military": 5 },
+      "nextQid": "Q43"
+    },
+
+    "Q43": {
+      "qid": "Q43",
+      "type": "input",
+      "text": "Armies rely on predictions and stop training. What was sacrificed?",
+      "correctAnswer": "Preparation",
+      "effects": { "health": 5, "economy": 5, "infrastructure": 5, "military": 5 },
+      "nextQid": "Q44"
+    },
+
+    "Q44": {
+      "qid": "Q44",
+      "type": "input",
+      "text": "A ruler rewards only visible achievements. What was undervalued?",
+      "correctAnswer": "Maintenance",
+      "effects": { "health": 5, "economy": 5, "infrastructure": 5, "military": 5 },
+      "nextQid": "END"
+    }
+  }
+}

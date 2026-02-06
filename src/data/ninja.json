@@ -1,0 +1,1126 @@
+{
+	"startQid": "Q1",
+	"questions": {
+		"Q1": {
+			"qid": "Q1",
+			"type": "decision",
+			"text": "What do you command to your Ninjas first?",
+			"options": [
+				{
+					"text": "Establish a school",
+					"effects": { "military": 6, "health": 6, "economy": -3, "infrastructure": 8 },
+					"nextQid": "Q18"
+				},
+				{
+					"text": "Contract killings",
+					"effects": { "military": 8, "health": -10, "economy": 6, "infrastructure": -2 },
+					"nextQid": "Q3"
+				}
+			]
+		},
+		"Q2": {
+			"qid": "Q2",
+			"type": "decision",
+			"text": "Ninjas aren't trained enough — what now?",
+			"options": [
+				{
+					"text": "Send them back to the school",
+					"effects": { "military": 3, "health": 5, "economy": -2, "infrastructure": 4 },
+					"nextQid": "Q18"
+				},
+				{
+					"text": "Deploy them carefully against criminals",
+					"effects": { "military": 5, "health": -2, "economy": 1, "infrastructure": 0 },
+					"nextQid": "Q5"
+				}
+			]
+		},
+		"Q3": {
+			"qid": "Q3",
+			"type": "decision",
+			"text": "How should contract killings be used?",
+			"options": [
+				{
+					"text": "Target criminals and other evil ninjas",
+					"effects": { "military": 8, "health": 2, "economy": -1, "infrastructure": -1 },
+					"nextQid": "Q4"
+				},
+				{
+					"text": "Target wealthy people from other villages",
+					"effects": { "military": 5, "health": -6, "economy": 10, "infrastructure": -2 },
+					"nextQid": "Q5"
+				},
+				{
+					"text": "Ninjas aren't trained enough",
+					"effects": { "military": -6, "health": -4, "economy": -3, "infrastructure": 0 },
+					"nextQid": "Q2"
+				}
+			]
+		},
+		"Q4": {
+			"qid": "Q4",
+			"type": "input",
+			"text": "To target criminals effectively, you must understand: What is the difference between justice and vengeance? (One word)",
+			"correctAnswer": "Mercy",
+			"effects": { "military": 8, "health": 1, "economy": -2, "infrastructure": -1 },
+			"nextQid": "Q5"
+		},
+		"Q5": {
+			"qid": "Q5",
+			"type": "input",
+			"text": "Targeting the wealthy requires strategy: What grows when taken, but shrinks when shared among thieves?",
+			"correctAnswer": "Suspicion",
+			"effects": { "military": 5, "health": -6, "economy": 12, "infrastructure": -3 },
+			"nextQid": "Q6"
+		},
+		"Q6": {
+			"qid": "Q6",
+			"type": "input",
+			"text": "Your image has fallen down. To restore honor, answer: What can be built in years but destroyed in moments?",
+			"correctAnswer": "Reputation",
+			"effects": { "military": -4, "health": -5, "economy": -4, "infrastructure": -1 },
+			"nextQid": "Q7"
+		},
+		"Q7": {
+			"qid": "Q7",
+			"type": "decision",
+			"text": "Dwarves have attacked",
+			"options": [
+				{
+					"text": "Fight back",
+					"effects": { "military": 9, "health": -6, "economy": -3, "infrastructure": -2 },
+					"nextQid": "Q8"
+				},
+				{
+					"text": "Surrender and say sorry to all other",
+					"effects": { "military": -5, "health": 4, "economy": -4, "infrastructure": -1 },
+					"nextQid": "Q9"
+				}
+			]
+		},
+		"Q8": {
+			"qid": "Q8",
+			"type": "decision",
+			"text": "Fight back",
+			"options": [
+				{
+					"text": "Win and rebuild with schools",
+					"effects": { "military": 10, "health": 6, "economy": -2, "infrastructure": 5 },
+					"nextQid": "Q10"
+				},
+				{
+					"text": "Lose and apologize",
+					"effects": { "military": -8, "health": 3, "economy": -5, "infrastructure": -3 },
+					"nextQid": "Q9"
+				}
+			]
+		},
+		"Q9": {
+			"qid": "Q9",
+			"type": "input",
+			"text": "To surrender honorably, you must know: What is stronger than weapons but cannot be held?",
+			"correctAnswer": "Peace",
+			"effects": { "military": -3, "health": 4, "economy": -2, "infrastructure": -1 },
+			"nextQid": "Q10"
+		},
+		"Q10": {
+			"qid": "Q10",
+			"type": "input",
+			"text": "We shall introduce schools. To build proper education, answer: What teaches without speaking?",
+			"correctAnswer": "Experience",
+			"effects": { "military": 6, "health": 7, "economy": -2, "infrastructure": 6 },
+			"nextQid": "Q11"
+		},
+		"Q11": {
+			"qid": "Q11",
+			"type": "input",
+			"text": "Only the strong survive. Training missions are lethal. To understand survival: What kills more than battles but leaves no scars?",
+			"correctAnswer": "Neglect",
+			"effects": { "military": 9, "health": -8, "economy": -2, "infrastructure": 2 },
+			"nextQid": "Q12"
+		},
+		"Q12": {
+			"qid": "Q12",
+			"type": "decision",
+			"text": "How lethal is the training?",
+			"options": [
+				{
+					"text": "Secretly save promising students",
+					"effects": { "military": 2, "health": 7, "economy": -1, "infrastructure": 1 },
+					"nextQid": "Q13"
+				},
+				{
+					"text": "No medical aid. No rescue.",
+					"effects": { "military": 8, "health": -10, "economy": -3, "infrastructure": -2 },
+					"nextQid": "Q15"
+				}
+			]
+		},
+		"Q13": {
+			"qid": "Q13",
+			"type": "input",
+			"text": "To save promising students secretly, you need: What is invisible but protects better than walls?",
+			"correctAnswer": "Vigilance",
+			"effects": { "military": 2, "health": 6, "economy": -1, "infrastructure": 1 },
+			"nextQid": "Q14"
+		},
+		"Q14": {
+			"qid": "Q14",
+			"type": "decision",
+			"text": "#Mission 1: A critical bridge connects the city to trade routes. It's damaged after a storm. Enemies may exploit it.",
+			"options": [
+				{
+					"text": "A. Send ninjas to repair secretly at night",
+					"effects": { "military": 6, "health": 5, "economy": 0, "infrastructure": 8 },
+					"nextQid": "Q17"
+				},
+				{
+					"text": "Reinforce key points and turn the bridge into a military checkpoint. Trade is allowed — but controlled.",
+					"effects": { "military": 7, "health": 3, "economy": 6, "infrastructure": 7 },
+					"nextQid": "Q17"
+				}
+			]
+		},
+		"Q15": {
+			"qid": "Q15",
+			"type": "input",
+			"text": "No medical aid. No rescue. To embrace this path: What grows in darkness but dies in compassion?",
+			"correctAnswer": "Ruthlessness",
+			"effects": { "military": 7, "health": -12, "economy": -4, "infrastructure": -3 },
+			"nextQid": "Q16"
+		},
+		"Q16": {
+			"qid": "Q16",
+			"type": "decision",
+			"text": "#MISSION 1 — THE COLLAPSING TUNNELS: Old underground tunnels (used by ninjas) are collapsing under the city.",
+			"options": [
+				{
+					"text": "A. Reinforce tunnels properly",
+					"effects": { "military": 5, "health": 6, "economy": -3, "infrastructure": 10 },
+					"nextQid": "Q17"
+				},
+				{
+					"text": "B. Seal tunnels permanently",
+					"effects": { "military": -4, "health": 4, "economy": -6, "infrastructure": 6 },
+					"nextQid": "Q17"
+				}
+			]
+		},
+		"Q17": {
+			"qid": "Q17",
+			"type": "input",
+			"text": "Outcome: Training reforms complete. To cement your legacy: What outlives the builder?",
+			"correctAnswer": "Tradition",
+			"effects": { "military": 4, "health": 5, "economy": 2, "infrastructure": 4 },
+			"nextQid": "Q50"
+		},
+		"Q18": {
+			"qid": "Q18",
+			"type": "input",
+			"text": "Students are trained in combat, intelligence, teamwork, and ethics. To begin: What is the foundation of all learning?",
+			"correctAnswer": "Curiosity",
+			"effects": { "military": 8, "health": 6, "economy": 2, "infrastructure": 4 },
+			"nextQid": "Q19"
+		},
+		"Q19": {
+			"qid": "Q19",
+			"type": "decision",
+			"text": "How should students be trained daily?",
+			"options": [
+				{
+					"text": "Classroom-focused theory: strategy, history, chakra theory",
+					"effects": { "military": 6, "health": 3, "economy": 2, "infrastructure": 4 },
+					"nextQid": "Q22"
+				},
+				{
+					"text": "Add practical rotations and other activities (farming, agriculture) for non-ninja paths",
+					"effects": { "military": 4, "health": 6, "economy": 8, "infrastructure": 5 },
+					"nextQid": "Q20"
+				},
+				{
+					"text": "Only strength matters; weak students are expelled or reassigned",
+					"effects": { "military": 10, "health": -8, "economy": -3, "infrastructure": -1 },
+					"nextQid": "Q27"
+				},
+				{
+					"text": "Mission-based learning (best): supervised real missions",
+					"effects": { "military": 12, "health": 5, "economy": 4, "infrastructure": 6 },
+					"nextQid": "Q42"
+				}
+			]
+		},
+		"Q20": {
+			"qid": "Q20",
+			"type": "input",
+			"text": "For practical rotations, understand: What feeds both body and soil?",
+			"correctAnswer": "Cycle",
+			"effects": { "military": 2, "health": 6, "economy": 9, "infrastructure": 5 },
+			"nextQid": "Q21"
+		},
+		"Q21": {
+			"qid": "Q21",
+			"type": "decision",
+			"text": "#Mission 1: Build",
+			"options": [
+				{
+					"text": "Build a training facility camp",
+					"effects": { "military": 10, "health": 4, "economy": -4, "infrastructure": 9 },
+					"nextQid": "Q23"
+				},
+				{
+					"text": "Build more homes",
+					"effects": { "military": 1, "health": 8, "economy": 6, "infrastructure": 7 },
+					"nextQid": "Q25"
+				}
+			]
+		},
+		"Q22": {
+			"qid": "Q22",
+			"type": "input",
+			"text": "For classroom theory mastery: What is known by all but mastered by few?",
+			"correctAnswer": "Basics",
+			"effects": { "military": 5, "health": 3, "economy": 2, "infrastructure": 4 },
+			"nextQid": "Q37"
+		},
+		"Q23": {
+			"qid": "Q23",
+			"type": "input",
+			"text": "To build a training camp: What must be balanced between discipline and creativity?",
+			"correctAnswer": "Structure",
+			"effects": { "military": 9, "health": 3, "economy": -3, "infrastructure": 8 },
+			"nextQid": "Q24"
+		},
+		"Q24": {
+			"qid": "Q24",
+			"type": "decision",
+			"text": "Build a hotsprings",
+			"options": [
+				{
+					"text": "Yes, build and integrate with camp",
+					"effects": { "military": 4, "health": 8, "economy": 6, "infrastructure": 7 },
+					"nextQid": "Q25"
+				},
+				{
+					"text": "Skip and focus on camp",
+					"effects": { "military": 6, "health": 2, "economy": -2, "infrastructure": 5 },
+					"nextQid": "Q25"
+				}
+			]
+		},
+		"Q25": {
+			"qid": "Q25",
+			"type": "input",
+			"text": "To build homes properly: What makes a house different from a home?",
+			"correctAnswer": "Community",
+			"effects": { "military": 1, "health": 8, "economy": 7, "infrastructure": 7 },
+			"nextQid": "Q17"
+		},
+		"Q26": {
+			"qid": "Q26",
+			"type": "input",
+			"text": "#Mission 2: Escort the feudal lord. For protection: What is more reliable than weapons?",
+			"correctAnswer": "Loyalty",
+			"effects": { "military": 8, "health": 4, "economy": 2, "infrastructure": 3 },
+			"nextQid": "Q50"
+		},
+		"Q27": {
+			"qid": "Q27",
+			"type": "input",
+			"text": "Only strength matters. To embrace this: What grows when you crush others?",
+			"correctAnswer": "Fear",
+			"effects": { "military": 9, "health": -8, "economy": -3, "infrastructure": -2 },
+			"nextQid": "Q28"
+		},
+		"Q28": {
+			"qid": "Q28",
+			"type": "decision",
+			"text": "Who is allowed to stay?",
+			"options": [
+				{
+					"text": "Brutal survival-of-the-fittest",
+					"effects": { "military": 12, "health": -10, "economy": -4, "infrastructure": -2 },
+					"nextQid": "Q29"
+				},
+				{
+					"text": "Strength + obedience + teamwork.",
+					"effects": { "military": 8, "health": 6, "economy": 1, "infrastructure": 2 },
+					"nextQid": "Q31"
+				}
+			]
+		},
+		"Q29": {
+			"qid": "Q29",
+			"type": "input",
+			"text": "For survival-of-the-fittest: What law governs the jungle?",
+			"correctAnswer": "Nature",
+			"effects": { "military": 10, "health": -9, "economy": -3, "infrastructure": -2 },
+			"nextQid": "Q30"
+		},
+		"Q30": {
+			"qid": "Q30",
+			"type": "decision",
+			"text": "#Mission 1: Capture a Dragon",
+			"options": [
+				{
+					"text": "Accept the mission (H +10, M +13)",
+					"effects": { "military": 13, "health": 10, "economy": 6, "infrastructure": 4 },
+					"nextQid": "Q35"
+				},
+				{
+					"text": "Reject the mission (M -2, H +1)",
+					"effects": { "military": -2, "health": 3, "economy": -1, "infrastructure": 0 },
+					"nextQid": "Q35"
+				}
+			]
+		},
+		"Q31": {
+			"qid": "Q31",
+			"type": "input",
+			"text": "For strength with teamwork: What multiplies individual power?",
+			"correctAnswer": "Coordination",
+			"effects": { "military": 8, "health": 6, "economy": 2, "infrastructure": 2 },
+			"nextQid": "Q32"
+		},
+		"Q32": {
+			"qid": "Q32",
+			"type": "input",
+			"text": "#Mission 1: Escort the feudal lord. For successful escort: What is more valuable than speed?",
+			"correctAnswer": "Awareness",
+			"effects": { "military": 8, "health": 3, "economy": 2, "infrastructure": 2 },
+			"nextQid": "Q33"
+		},
+		"Q33": {
+			"qid": "Q33",
+			"type": "input",
+			"text": "You are attacked by a much stronger opponent. In such situations: What defeats strength?",
+			"correctAnswer": "Strategy",
+			"effects": { "military": 4, "health": -6, "economy": -2, "infrastructure": -1 },
+			"nextQid": "Q34"
+		},
+		"Q34": {
+			"qid": "Q34",
+			"type": "decision",
+			"text": "On the good side teamwork of our team is very nice",
+			"options": [
+				{
+					"text": "Formation A: Teamwork (not much tools used)",
+					"effects": { "military": 6, "health": 5, "economy": 1, "infrastructure": 2 },
+					"nextQid": "Q36"
+				},
+				{
+					"text": "Formation B: Usage of tools",
+					"effects": { "military": 7, "health": 2, "economy": 3, "infrastructure": 3 },
+					"nextQid": "Q36"
+				}
+			]
+		},
+		"Q35": {
+			"qid": "Q35",
+			"type": "input",
+			"text": "Dragon mission resolved. To understand mythical creatures: What is real in legends?",
+			"correctAnswer": "Truth",
+			"effects": { "military": 9, "health": 4, "economy": 6, "infrastructure": 3 },
+			"nextQid": "Q50"
+		},
+		"Q36": {
+			"qid": "Q36",
+			"type": "input",
+			"text": "Formation chosen and applied. What determines victory before battle begins?",
+			"correctAnswer": "Preparation",
+			"effects": { "military": 7, "health": 4, "economy": 2, "infrastructure": 3 },
+			"nextQid": "Q50"
+		},
+		"Q37": {
+			"qid": "Q37",
+			"type": "input",
+			"text": "#Mission 1: Escort the feudal lord. Without experience: What cannot be taught?",
+			"correctAnswer": "Wisdom",
+			"effects": { "military": 8, "health": 3, "economy": 2, "infrastructure": 2 },
+			"nextQid": "Q38"
+		},
+		"Q38": {
+			"qid": "Q38",
+			"type": "input",
+			"text": "With no real experience the team lacks teamwork and control. What bridges theory and practice?",
+			"correctAnswer": "Application",
+			"effects": { "military": -5, "health": -6, "economy": -2, "infrastructure": -2 },
+			"nextQid": "Q39"
+		},
+		"Q39": {
+			"qid": "Q39",
+			"type": "decision",
+			"text": "How do you respond?",
+			"options": [
+				{
+					"text": "Run and save life of your own ninjas",
+					"effects": { "military": -6, "health": 6, "economy": -2, "infrastructure": -1 },
+					"nextQid": "Q40"
+				},
+				{
+					"text": "Sacrifice few ninjas to save feudal lord and defeat the enemies",
+					"effects": { "military": 9, "health": -7, "economy": 3, "infrastructure": 1 },
+					"nextQid": "Q41"
+				}
+			]
+		},
+		"Q40": {
+			"qid": "Q40",
+			"type": "input",
+			"text": "To save your ninjas: What is a leader's first duty?",
+			"correctAnswer": "Protection",
+			"effects": { "military": -5, "health": 6, "economy": -2, "infrastructure": -1 },
+			"nextQid": "Q50"
+		},
+		"Q41": {
+			"qid": "Q41",
+			"type": "input",
+			"text": "To sacrifice for victory: What price is paid by commanders but not soldiers?",
+			"correctAnswer": "Guilt",
+			"effects": { "military": 9, "health": -7, "economy": 3, "infrastructure": 1 },
+			"nextQid": "Q50"
+		},
+		"Q42": {
+			"qid": "Q42",
+			"type": "input",
+			"text": "Mission-based learning requires: What is the best teacher?",
+			"correctAnswer": "Mistakes",
+			"effects": { "military": 12, "health": 6, "economy": 5, "infrastructure": 6 },
+			"nextQid": "Q43"
+		},
+		"Q43": {
+			"qid": "Q43",
+			"type": "decision",
+			"text": "#Mission 1: Capture a source of fruit that powers up your ninjas, but requires challenges and sacrifices.",
+			"options": [
+				{
+					"text": "Abandon the mission (major stat difference)",
+					"effects": { "military": -5, "health": 4, "economy": -3, "infrastructure": 0 },
+					"nextQid": "Q44"
+				},
+				{
+					"text": "Get the fruit (major stat difference)",
+					"effects": { "military": 15, "health": -12, "economy": 8, "infrastructure": 4 },
+					"nextQid": "Q45"
+				}
+			]
+		},
+		"Q44": {
+			"qid": "Q44",
+			"type": "input",
+			"text": "To abandon wisely: What is stronger than ambition?",
+			"correctAnswer": "Prudence",
+			"effects": { "military": -4, "health": 5, "economy": -2, "infrastructure": -1 },
+			"nextQid": "Q50"
+		},
+		"Q45": {
+			"qid": "Q45",
+			"type": "input",
+			"text": "To seize power: What risk accompanies all great rewards?",
+			"correctAnswer": "Corruption",
+			"effects": { "military": 10, "health": -8, "economy": 6, "infrastructure": 3 },
+			"nextQid": "Q50"
+		},
+		"Q50": {
+			"qid": "Q50",
+			"type": "decision",
+			"text": "Q1. The city's underground drainage canals are blocked. Flooding will spread disease, but repairs will expose secret ninja tunnels.",
+			"options": [
+				{
+					"text": "A. Clear drainage fully, abandon tunnels",
+					"effects": { "military": -4, "health": 10, "economy": -2, "infrastructure": 8 },
+					"nextQid": "Q51"
+				},
+				{
+					"text": "B. Keep tunnels, redirect sewage to outer districts",
+					"effects": { "military": 4, "health": -8, "economy": -3, "infrastructure": 2 },
+					"nextQid": "Q51"
+				},
+				{
+					"text": "C. Partial cleanup, maintain tunnels secretly",
+					"effects": { "military": 3, "health": 4, "economy": -1, "infrastructure": 5 },
+					"nextQid": "Q51"
+				},
+				{
+					"text": "D. Seal canals completely and rely on surface runoff",
+					"effects": { "military": -2, "health": -7, "economy": -2, "infrastructure": -6 },
+					"nextQid": "Q51"
+				}
+			]
+		},
+		"Q51": {
+			"qid": "Q51",
+			"type": "decision",
+			"text": "Q2. A major transport road passes through a civilian market and a ninja supply route. Traffic jams are rising.",
+			"options": [
+				{
+					"text": "A. Reroute civilians away from the road",
+					"effects": { "military": 4, "health": 1, "economy": -3, "infrastructure": 2 },
+					"nextQid": "Q52"
+				},
+				{
+					"text": "B. Reroute ninja logistics to night-only movement",
+					"effects": { "military": 2, "health": 3, "economy": 1, "infrastructure": 1 },
+					"nextQid": "Q52"
+				},
+				{
+					"text": "C. Expand road using market land",
+					"effects": { "military": 3, "health": -2, "economy": 6, "infrastructure": 6 },
+					"nextQid": "Q52"
+				},
+				{
+					"text": "D. Militarize the road with checkpoints",
+					"effects": { "military": 8, "health": -3, "economy": -5, "infrastructure": 3 },
+					"nextQid": "Q52"
+				}
+			]
+		},
+		"Q52": {
+			"qid": "Q52",
+			"type": "decision",
+			"text": "Q3. Restaurants near the academy dump waste illegally, poisoning water sources but feeding thousands cheaply.",
+			"options": [
+				{
+					"text": "A. Shut down offending restaurants",
+					"effects": { "military": 2, "health": 10, "economy": -8, "infrastructure": 2 },
+					"nextQid": "Q53"
+				},
+				{
+					"text": "B. Ignore issue, prioritize food supply",
+					"effects": { "military": -2, "health": -10, "economy": 6, "infrastructure": -3 },
+					"nextQid": "Q53"
+				},
+				{
+					"text": "C. Force restaurants to fund waste treatment",
+					"effects": { "military": 3, "health": 8, "economy": -2, "infrastructure": 5 },
+					"nextQid": "Q53"
+				},
+				{
+					"text": "D. Move waste downstream to enemy border",
+					"effects": { "military": 5, "health": -8, "economy": 1, "infrastructure": -2 },
+					"nextQid": "Q53"
+				}
+			]
+		},
+		"Q53": {
+			"qid": "Q53",
+			"type": "decision",
+			"text": "Q4. A trade district wants night markets. Ninjas warn it reduces patrol visibility.",
+			"options": [
+				{
+					"text": "A. Allow night markets, increase lighting",
+					"effects": { "military": 1, "health": 2, "economy": 7, "infrastructure": 3 },
+					"nextQid": "Q54"
+				},
+				{
+					"text": "B. Ban night markets, enforce curfew",
+					"effects": { "military": 5, "health": 4, "economy": -6, "infrastructure": 1 },
+					"nextQid": "Q54"
+				},
+				{
+					"text": "C. Allow only ninja-monitored stalls",
+					"effects": { "military": 6, "health": 3, "economy": 4, "infrastructure": 2 },
+					"nextQid": "Q54"
+				},
+				{
+					"text": "D. Move markets underground",
+					"effects": { "military": 1, "health": -4, "economy": 6, "infrastructure": -1 },
+					"nextQid": "Q54"
+				}
+			]
+		},
+		"Q54": {
+			"qid": "Q54",
+			"type": "decision",
+			"text": "Q5. Public bathhouses improve hygiene but are perfect places for information leaks.",
+			"options": [
+				{
+					"text": "A. Keep bathhouses open, monitor secretly",
+					"effects": { "military": 2, "health": 6, "economy": 3, "infrastructure": 1 },
+					"nextQid": "Q55"
+				},
+				{
+					"text": "B. Shut them down near sensitive zones",
+					"effects": { "military": 4, "health": 2, "economy": -4, "infrastructure": 1 },
+					"nextQid": "Q55"
+				},
+				{
+					"text": "C. Convert bathhouses into ninja-only facilities",
+					"effects": { "military": 6, "health": 1, "economy": -5, "infrastructure": 2 },
+					"nextQid": "Q55"
+				},
+				{
+					"text": "D. Ignore security risks",
+					"effects": { "military": -4, "health": 3, "economy": 6, "infrastructure": 0 },
+					"nextQid": "Q55"
+				}
+			]
+		},
+		"Q55": {
+			"qid": "Q55",
+			"type": "decision",
+			"text": "Q6. A new residential block can house civilians OR returning injured ninjas. Space allows only one.",
+			"options": [
+				{
+					"text": "A. House injured ninjas",
+					"effects": { "military": 8, "health": 6, "economy": -5, "infrastructure": 1 },
+					"nextQid": "Q56"
+				},
+				{
+					"text": "B. House civilians",
+					"effects": { "military": 1, "health": 8, "economy": 5, "infrastructure": 1 },
+					"nextQid": "Q56"
+				},
+				{
+					"text": "C. Split space inefficiently",
+					"effects": { "military": 2, "health": 3, "economy": -2, "infrastructure": 0 },
+					"nextQid": "Q56"
+				},
+				{
+					"text": "D. Delay decision, keep block unused",
+					"effects": { "military": -4, "health": -3, "economy": -4, "infrastructure": -2 },
+					"nextQid": "Q56"
+				}
+			]
+		},
+		"Q56": {
+			"qid": "Q56",
+			"type": "decision",
+			"text": "Q7. Food supply routes pass through a high-crime slum. Fixing the area is costly.",
+			"options": [
+				{
+					"text": "A. Improve sanitation and policing",
+					"effects": { "military": 5, "health": 8, "economy": 2, "infrastructure": 4 },
+					"nextQid": "Q57"
+				},
+				{
+					"text": "B. Bypass the slum entirely",
+					"effects": { "military": 3, "health": 2, "economy": 1, "infrastructure": -3 },
+					"nextQid": "Q57"
+				},
+				{
+					"text": "C. Let ninjas control distribution",
+					"effects": { "military": 7, "health": -2, "economy": 3, "infrastructure": 1 },
+					"nextQid": "Q57"
+				},
+				{
+					"text": "D. Raise food prices to reduce demand",
+					"effects": { "military": -2, "health": -6, "economy": 6, "infrastructure": 0 },
+					"nextQid": "Q57"
+				}
+			]
+		},
+		"Q57": {
+			"qid": "Q57",
+			"type": "decision",
+			"text": "Q8. Irrigation can be repaired or weaponized.",
+			"options": [
+				{
+					"text": "A. Repair fully",
+					"effects": { "military": 2, "health": 6, "economy": 2, "infrastructure": 9 },
+					"nextQid": "Q58"
+				},
+				{
+					"text": "B. Flood enemy routes",
+					"effects": { "military": 8, "health": -4, "economy": -3, "infrastructure": -1 },
+					"nextQid": "Q58"
+				},
+				{
+					"text": "C. Partial repair + traps",
+					"effects": { "military": 6, "health": 1, "economy": -1, "infrastructure": 4 },
+					"nextQid": "Q58"
+				},
+				{
+					"text": "D. Ignore and advance",
+					"effects": { "military": -3, "health": -6, "economy": -2, "infrastructure": -5 },
+					"nextQid": "Q58"
+				}
+			]
+		},
+		"Q58": {
+			"qid": "Q58",
+			"type": "decision",
+			"text": "Q9. A bridge is unstable but critical.",
+			"options": [
+				{
+					"text": "A. Quick reinforcement",
+					"effects": { "military": 3, "health": 4, "economy": 1, "infrastructure": 8 },
+					"nextQid": "Q59"
+				},
+				{
+					"text": "B. Bypass via mountains",
+					"effects": { "military": -2, "health": -1, "economy": -3, "infrastructure": -2 },
+					"nextQid": "Q59"
+				},
+				{
+					"text": "C. Guard and wait",
+					"effects": { "military": 2, "health": 1, "economy": -1, "infrastructure": -1 },
+					"nextQid": "Q59"
+				},
+				{
+					"text": "D. Abandon route",
+					"effects": { "military": -5, "health": -4, "economy": -6, "infrastructure": -5 },
+					"nextQid": "Q59"
+				}
+			]
+		},
+		"Q59": {
+			"qid": "Q59",
+			"type": "decision",
+			"text": "Q10. Refugees block supply routes.",
+			"options": [
+				{
+					"text": "A. Relocate them",
+					"effects": { "military": 4, "health": 2, "economy": -3, "infrastructure": -1 },
+					"nextQid": "Q60"
+				},
+				{
+					"text": "B. Use for labor",
+					"effects": { "military": 3, "health": -3, "economy": 6, "infrastructure": 1 },
+					"nextQid": "Q60"
+				},
+				{
+					"text": "C. Force-clear area",
+					"effects": { "military": 6, "health": -6, "economy": -4, "infrastructure": -2 },
+					"nextQid": "Q60"
+				},
+				{
+					"text": "D. Ignore them",
+					"effects": { "military": -3, "health": -5, "economy": -2, "infrastructure": -3 },
+					"nextQid": "Q60"
+				}
+			]
+		},
+		"Q60": {
+			"qid": "Q60",
+			"type": "decision",
+			"text": "Q11. Old tunnels are collapsing.",
+			"options": [
+				{
+					"text": "A. Reinforce",
+					"effects": { "military": 3, "health": 4, "economy": -2, "infrastructure": 9 },
+					"nextQid": "Q61"
+				},
+				{
+					"text": "B. Seal permanently",
+					"effects": { "military": -2, "health": 2, "economy": -3, "infrastructure": 5 },
+					"nextQid": "Q61"
+				},
+				{
+					"text": "C. Use despite risk",
+					"effects": { "military": 5, "health": -6, "economy": -1, "infrastructure": -5 },
+					"nextQid": "Q61"
+				},
+				{
+					"text": "D. Evacuate zone",
+					"effects": { "military": -3, "health": 3, "economy": -4, "infrastructure": -2 },
+					"nextQid": "Q61"
+				}
+			]
+		},
+		"Q61": {
+			"qid": "Q61",
+			"type": "decision",
+			"text": "Q12. Food stores are contaminated.",
+			"options": [
+				{
+					"text": "A. Distribute anyway",
+					"effects": { "military": -2, "health": -12, "economy": 4, "infrastructure": -2 },
+					"nextQid": "Q62"
+				},
+				{
+					"text": "B. Destroy stores",
+					"effects": { "military": -1, "health": 8, "economy": -10, "infrastructure": -2 },
+					"nextQid": "Q62"
+				},
+				{
+					"text": "C. Ration strictly",
+					"effects": { "military": 1, "health": 4, "economy": -4, "infrastructure": 1 },
+					"nextQid": "Q62"
+				},
+				{
+					"text": "D. Seize from traders",
+					"effects": { "military": 6, "health": -4, "economy": 3, "infrastructure": -1 },
+					"nextQid": "Q62"
+				}
+			]
+		},
+		"Q62": {
+			"qid": "Q62",
+			"type": "decision",
+			"text": "Q13. Bandits control a factory district.",
+			"options": [
+				{
+					"text": "A. Assault directly",
+					"effects": { "military": 10, "health": -6, "economy": 2, "infrastructure": -1 },
+					"nextQid": "Q63"
+				},
+				{
+					"text": "B. Siege",
+					"effects": { "military": 6, "health": -3, "economy": -2, "infrastructure": 1 },
+					"nextQid": "Q63"
+				},
+				{
+					"text": "C. Negotiate",
+					"effects": { "military": 2, "health": 2, "economy": 6, "infrastructure": 0 },
+					"nextQid": "Q63"
+				},
+				{
+					"text": "D. Sabotage utilities",
+					"effects": { "military": 5, "health": -3, "economy": -2, "infrastructure": -6 },
+					"nextQid": "Q63"
+				}
+			]
+		},
+		"Q63": {
+			"qid": "Q63",
+			"type": "decision",
+			"text": "Q14. A road expansion slows troop movement.",
+			"options": [
+				{
+					"text": "A. Pause expansion",
+					"effects": { "military": 4, "health": 1, "economy": -2, "infrastructure": -3 },
+					"nextQid": "Q64"
+				},
+				{
+					"text": "B. Continue anyway",
+					"effects": { "military": -2, "health": -1, "economy": 4, "infrastructure": 6 },
+					"nextQid": "Q64"
+				},
+				{
+					"text": "C. Reroute troops",
+					"effects": { "military": 2, "health": 0, "economy": -1, "infrastructure": 2 },
+					"nextQid": "Q64"
+				},
+				{
+					"text": "D. Militarize road",
+					"effects": { "military": 8, "health": -1, "economy": 2, "infrastructure": 4 },
+					"nextQid": "Q64"
+				}
+			]
+		},
+		"Q64": {
+			"qid": "Q64",
+			"type": "input",
+			"text": "🍀 Riddle 1: I am created once, then corrected forever. Ninjas exploit my mistakes, cities pay for my absence, and no emergency can fix me in time. I am never urgent, until it is too late. What am I?",
+			"correctAnswer": "Design",
+			"effects": { "military": 5, "health": 5, "economy": 5, "infrastructure": 5 },
+			"nextQid": "Q65"
+		},
+		"Q65": {
+			"qid": "Q65",
+			"type": "input",
+			"text": "🍀 Riddle 2: I do not move people, but people move because of me. When I am smooth, speed is invisible. When I am broken, blame is loud. Ninjas map me before missions, yet never fight on me. What am I?",
+			"correctAnswer": "Flow",
+			"effects": { "military": 5, "health": 5, "economy": 5, "infrastructure": 5 },
+			"nextQid": "Q66"
+		},
+		"Q66": {
+			"qid": "Q66",
+			"type": "input",
+			"text": "Riddle 3: I do not fight, yet wars are lost without me. I rot silently while victories are celebrated. When I fail, even the strongest kneel. What am I?",
+			"correctAnswer": "Logistics",
+			"effects": { "military": 5, "health": 5, "economy": 5, "infrastructure": 5 },
+			"nextQid": "Q67"
+		},
+		"Q67": {
+			"qid": "Q67",
+			"type": "input",
+			"text": "🍀 Riddle 4: I increase when control weakens, but also when control tightens. I disappear only when systems replace force. Ninjas suppress me, armies provoke me, and cities collapse if I outlive patience. What am I?",
+			"correctAnswer": "Tension",
+			"effects": { "military": 5, "health": 5, "economy": 5, "infrastructure": 5 },
+			"nextQid": "Q68"
+		},
+		"Q68": {
+			"qid": "Q68",
+			"type": "input",
+			"text": "🍀 Riddle 5: I am not secrecy, but secrecy depends on me. I am not law, but law fails without me. Ninjas enforce me indirectly, cities violate me unknowingly. What am I?",
+			"correctAnswer": "Boundaries",
+			"effects": { "military": 5, "health": 5, "economy": 5, "infrastructure": 5 },
+			"nextQid": "Q69"
+		},
+		"Q69": {
+			"qid": "Q69",
+			"type": "input",
+			"text": "🍀 Riddle 6: I look like discipline from above, and like delay from below. Ninjas exploit me to stay hidden. Merchants hate me, planners defend me, and emergencies expose my cost. What am I?",
+			"correctAnswer": "Procedure",
+			"effects": { "military": 5, "health": 5, "economy": 5, "infrastructure": 5 },
+			"nextQid": "Q70"
+		},
+		"Q70": {
+			"qid": "Q70",
+			"type": "input",
+			"text": "🍀 Riddle 7: I decide who leads before battles begin. Those who fail me may still win wars, but never command them. What am I?",
+			"correctAnswer": "Judgment",
+			"effects": { "military": 5, "health": 5, "economy": 5, "infrastructure": 5 },
+			"nextQid": "Q71"
+		},
+		"Q71": {
+			"qid": "Q71",
+			"type": "input",
+			"text": "🍀 Riddle 8: I am trained in shadows, but measured in daylight. If I grow too fast, I break. If too slow, I am replaced. What am I?",
+			"correctAnswer": "Academy",
+			"effects": { "military": 5, "health": 5, "economy": 5, "infrastructure": 5 },
+			"nextQid": "Q72"
+		},
+		"Q72": {
+			"qid": "Q72",
+			"type": "input",
+			"text": "🍀 Riddle 9: I save lives quietly, but am blamed loudly. When removed, heroes increase and cities fall. What am I?",
+			"correctAnswer": "Infrastructure",
+			"effects": { "military": 5, "health": 5, "economy": 5, "infrastructure": 5 },
+			"nextQid": "Q73"
+		},
+		"Q73": {
+			"qid": "Q73",
+			"type": "input",
+			"text": "🍀 Riddle 10: I look like kindness, feel like weakness, but outlive brutality. What am I?",
+			"correctAnswer": "Mercy",
+			"effects": { "military": 5, "health": 5, "economy": 5, "infrastructure": 5 },
+			"nextQid": "Q74"
+		},
+		"Q74": {
+			"qid": "Q74",
+			"type": "input",
+			"text": "🍀 Riddle 11: I create warriors quickly, but commanders slowly. Those who skip me regret it later. What am I?",
+			"correctAnswer": "Experience",
+			"effects": { "military": 5, "health": 5, "economy": 5, "infrastructure": 5 },
+			"nextQid": "Q75"
+		},
+		"Q75": {
+			"qid": "Q75",
+			"type": "input",
+			"text": "🍀 Riddle 12: I am taken from the poor, counted by the rich, and worshipped by rulers. Yet I cannot heal anyone. What am I?",
+			"correctAnswer": "Economy",
+			"effects": { "military": 5, "health": 5, "economy": 5, "infrastructure": 5 },
+			"nextQid": "Q76"
+		},
+		"Q76": {
+			"qid": "Q76",
+			"type": "input",
+			"text": "🍀 Riddle 13: I do not appear on maps, but decide their borders. Ignore me and rebellions rise. What am I?",
+			"correctAnswer": "Trust",
+			"effects": { "military": 5, "health": 5, "economy": 5, "infrastructure": 5 },
+			"nextQid": "Q77"
+		},
+		"Q77": {
+			"qid": "Q77",
+			"type": "input",
+			"text": "🍀 Riddle 14: I am the final test. Those who seek me fail. Those who avoid me earn it. What am I?",
+			"correctAnswer": "Authority",
+			"effects": { "military": 5, "health": 5, "economy": 5, "infrastructure": 5 },
+			"nextQid": "Q78"
+		},
+		"Q78": {
+			"qid": "Q78",
+			"type": "decision",
+			"text": "Q1 — Withdrawal of the Shadows: One domain no longer needs shadow intervention. Where do the shadows fully withdraw, trusting the city to run on its own?",
+			"options": [
+				{
+					"text": "A. Drainage & water flow",
+					"effects": { "military": -2, "health": 6, "economy": 2, "infrastructure": 8 },
+					"nextQid": "Q79"
+				},
+				{
+					"text": "B. Transport scheduling",
+					"effects": { "military": -1, "health": 2, "economy": 7, "infrastructure": 5 },
+					"nextQid": "Q79"
+				},
+				{
+					"text": "C. Food distribution routes",
+					"effects": { "military": -3, "health": 3, "economy": 8, "infrastructure": 3 },
+					"nextQid": "Q79"
+				},
+				{
+					"text": "D. Patrol zoning logic",
+					"effects": { "military": -6, "health": -3, "economy": -2, "infrastructure": 1 },
+					"nextQid": "Q79"
+				}
+			]
+		},
+		"Q79": {
+			"qid": "Q79",
+			"type": "decision",
+			"text": "Q2 — Permanent Oversight: Which system must always remain under quiet ninja oversight?",
+			"options": [
+				{
+					"text": "A. Information flow",
+					"effects": { "military": 6, "health": 0, "economy": 3, "infrastructure": 2 },
+					"nextQid": "Q80"
+				},
+				{
+					"text": "B. Markets & pricing",
+					"effects": { "military": 3, "health": -1, "economy": 8, "infrastructure": 2 },
+					"nextQid": "Q80"
+				},
+				{
+					"text": "C. Emergency response",
+					"effects": { "military": 4, "health": 8, "economy": 1, "infrastructure": 3 },
+					"nextQid": "Q80"
+				},
+				{
+					"text": "D. Movement permits",
+					"effects": { "military": 7, "health": -1, "economy": -2, "infrastructure": 3 },
+					"nextQid": "Q80"
+				}
+			]
+		},
+		"Q80": {
+			"qid": "Q80",
+			"type": "decision",
+			"text": "Q3 — Accepted Imperfection: What does the city stop trying to eliminate?",
+			"options": [
+				{
+					"text": "A. Bureaucratic delay",
+					"effects": { "military": 0, "health": 1, "economy": -2, "infrastructure": 2 },
+					"nextQid": "Q81"
+				},
+				{
+					"text": "B. Aging infrastructure",
+					"effects": { "military": 2, "health": 1, "economy": 3, "infrastructure": -6 },
+					"nextQid": "Q81"
+				},
+				{
+					"text": "C. Rising inequality",
+					"effects": { "military": -2, "health": -4, "economy": 5, "infrastructure": -1 },
+					"nextQid": "Q81"
+				},
+				{
+					"text": "D. Public resentment",
+					"effects": { "military": -3, "health": -3, "economy": 2, "infrastructure": 0 },
+					"nextQid": "Q81"
+				}
+			]
+		},
+		"Q81": {
+			"qid": "Q81",
+			"type": "decision",
+			"text": "Q4 — Retreat of Control: If shadows must pull back, where do they retreat first to minimize long-term damage?",
+			"options": [
+				{
+					"text": "A. Outer districts",
+					"effects": { "military": -2, "health": 2, "economy": 1, "infrastructure": 2 },
+					"isEnd": true,
+					"endType": "success"
+				},
+				{
+					"text": "B. City center",
+					"effects": { "military": -3, "health": -1, "economy": 3, "infrastructure": 2 },
+					"isEnd": true,
+					"endType": "success"
+				},
+				{
+					"text": "C. Underground systems",
+					"effects": { "military": 4, "health": 1, "economy": 2, "infrastructure": -3 },
+					"isEnd": true,
+					"endType": "success"
+				},
+				{
+					"text": "D. Administrative core",
+					"effects": { "military": -2, "health": 2, "economy": 2, "infrastructure": 1 },
+					"isEnd": true,
+					"endType": "success"
+				}
+			]
+		}
+	}
+}

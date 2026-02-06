@@ -1,0 +1,1075 @@
+{
+  "version": "1.0",
+  "startQid": "Q1",
+  "questions": {
+    "Q1": {
+      "qid": "Q1",
+      "type": "decision",
+      "text": "What is your first priority as ruler of the Dwarven Kingdom?",
+      "options": [
+        {
+          "text": "Invest in reinforced tunnels (strengthen before expanding)",
+          "effects": {
+            "economy": 0,
+            "health": 2,
+            "military": 0,
+            "infrastructure": 8
+          },
+          "nextQid": "Q2"
+        },
+        {
+          "text": "Militarize the guards to secure mines",
+          "effects": {
+            "economy": -3,
+            "health": -5,
+            "military": 10,
+            "infrastructure": 0
+          },
+          "nextQid": "Q3"
+        },
+        {
+          "text": "Push aggressive mining (dig deeper, faster)",
+          "effects": {
+            "economy": 8,
+            "health": -8,
+            "military": 0,
+            "infrastructure": -3
+          },
+          "nextQid": "Q4"
+        }
+      ]
+    },
+    "Q2": {
+      "qid": "Q2",
+      "type": "decision",
+      "text": "You shore up tunnels and invest in infrastructure. Continue?",
+      "options": [
+        {
+          "text": "Proceed carefully with expansion",
+          "effects": {
+            "economy": 0,
+            "health": 3,
+            "military": 0,
+            "infrastructure": 4
+          },
+          "nextQid": "Q5"
+        }
+      ]
+    },
+    "Q3": {
+      "qid": "Q3",
+      "type": "decision",
+      "text": "You deploy guards throughout the mines. Deploy them now?",
+      "options": [
+        {
+          "text": "Deploy guards across tunnels",
+          "effects": {
+            "economy": -2,
+            "health": -3,
+            "military": 7,
+            "infrastructure": 0
+          },
+          "nextQid": "Q6"
+        }
+      ]
+    },
+    "Q4": {
+      "qid": "Q4",
+      "type": "decision",
+      "text": "You push miners to work faster and deeper. Continue?",
+      "options": [
+        {
+          "text": "Order miners to keep digging",
+          "effects": {
+            "economy": 7,
+            "health": -7,
+            "military": 0,
+            "infrastructure": -3
+          },
+          "nextQid": "Q5"
+        }
+      ]
+    },
+    "Q5": {
+      "qid": "Q5",
+      "type": "decision",
+      "text": "Despite reinforcements, a massive underground fault is discovered beneath the capital. How do you respond?",
+      "options": [
+        {
+          "text": "Exploit it carefully — send elite engineers to mine and study the fault",
+          "effects": {
+            "economy": 12,
+            "health": -6,
+            "military": 0,
+            "infrastructure": 8
+          },
+          "nextQid": "Q9"
+        },
+        {
+          "text": "Seal the fault permanently (close the affected shafts for safety)",
+          "effects": {
+            "economy": -8,
+            "health": 8,
+            "military": 0,
+            "infrastructure": -7
+          },
+          "nextQid": "Q10"
+        },
+        {
+          "text": "Guard and study slowly — secure the area and research it over time",
+          "effects": {
+            "economy": 0,
+            "health": 4,
+            "military": -4,
+            "infrastructure": 4
+          },
+          "nextQid": "Q11"
+        }
+      ]
+    },
+    "Q6": {
+      "qid": "Q6",
+      "type": "decision",
+      "text": "With guards stationed throughout the mines, productivity rises — but the atmosphere grows tense. One night a violent clash breaks out in a tunnel (a guard is killed, the tunnel is sealed). How do you handle the crisis?",
+      "options": [
+        {
+          "text": "Hold a public trial — investigate and deliver justice openly",
+          "effects": {
+            "economy": 0,
+            "health": 6,
+            "military": -6,
+            "infrastructure": 0
+          },
+          "nextQid": "Q12"
+        },
+        {
+          "text": "Enforce harsh military justice — make an example of the miners",
+          "effects": {
+            "economy": -6,
+            "health": -10,
+           "military": 12,
+            "infrastructure": -4
+          },
+          "nextQid": "E1_FAIL"
+        },
+        {
+          "text": "Reduce military presence and restore civilian oversight",
+          "effects": {
+            "economy": 0,
+            "health": 8,
+            "military": -9,
+            "infrastructure": 0
+          },
+          "nextQid": "Q11"
+        }
+      ]
+    },
+    "Q9": {
+      "qid": "Q9",
+      "type": "input",
+      "text": "🔐 KEYWORD REQUIRED: Your chief engineer asks for the operation keyword to begin careful exploitation (hint: who leads the engineering team?).",
+      "correctAnswer": "ENGINEERS",
+      "effects": {
+        "economy": 5,
+        "health": 5,
+        "military": 5,
+        "infrastructure": 5
+      },
+      "nextQid": "Q13"
+    },
+    "Q10": {
+      "qid": "Q10",
+      "type": "input",
+      "text": "I am taken from a mine and shut in a wooden case, yet I am used by those who never see me. Kings have killed for me, but I have no value to the dead. The more of me you take, the more you leave behind. What am I?",
+      "correctAnswer": "SECRET",
+      "effects": {
+        "economy": 5,
+        "health": 5,
+        "military": 5,
+        "infrastructure": 5
+      },
+      "nextQid": "Q14"
+    },
+    "Q11": {
+      "qid": "Q11",
+      "type": "input",
+      "text": "You secure the area and begin a slow study. The more you remove from me, the larger I become. Engineers curse me; strategists exploit me. What am I?",
+      "correctAnswer": "HOLE",
+      "effects": {
+        "economy": 5,
+        "health": 5,
+        "military": 5,
+        "infrastructure": 5
+      },
+      "nextQid": "Q14"
+    },
+    "Q12": {
+      "qid": "Q12",
+      "type": "input",
+      "text": "RIDDLE: The court asks — 'What binds a community more surely than law yet cannot be seen?' (Hint: 5 letters)",
+      "correctAnswer": "TRUST",
+      "effects": {
+        "economy": 5,
+        "health": 5,
+        "military": 5,
+        "infrastructure": 5
+      },
+      "nextQid": "Q14"
+    },
+    "Q13": {
+      "qid": "Q13",
+      "type": "input",
+      "text": "🧠 MINING BONUS RIDDLE: You must name the engineering concept that prevents collapse (1 word)",
+      "correctAnswer": "STABILITY",
+      "effects": {
+        "economy": 5,
+        "health": 5,
+        "military": 5,
+        "infrastructure": 5
+      },
+      "nextQid": "Q15"
+    },
+    "Q14": {
+      "qid": "Q14",
+      "type": "decision",
+      "text": "After addressing the fault and recent unrest, you must set long-term policy. Which will you choose?",
+      "options": [
+        {
+          "text": "Invest in living conditions (build rest halls and housing for miners)",
+          "effects": {
+            "economy": -6,
+            "health": 12,
+            "military": 0,
+            "infrastructure": 8
+          },
+          "nextQid": "Q15"
+        },
+        {
+          "text": "Support industry — prioritize output over welfare",
+          "effects": {
+            "economy": 12,
+            "health": -8,
+            "military": 0,
+            "infrastructure": 0
+          },
+          "nextQid": "Q15"
+        }
+      ]
+    },
+    "Q15": {
+      "qid": "Q15",
+      "type": "input",
+      "text": "🏆 ROUND COMPLETE — Diplomat's Trial: I end wars without fighting, build bridges without stone, and vanish the moment pride speaks louder. Name me (1 word)",
+      "correctAnswer": "DIPLOMACY",
+      "effects": {
+        "economy": 5,
+        "health": 5,
+        "military": 5,
+        "infrastructure": 5
+      },
+      "nextQid": "Q17"
+    },
+    "Q16": {
+      "qid": "Q16",
+      "type": "decision",
+      "text": "A new opportunity appears: a rich vein discovered near the sealed fault. How do you act?",
+      "options": [
+        {
+          "text": "Exploit it carefully using the lessons learned",
+          "effects": {
+            "economy": 15,
+            "health": 0,
+            "military": 0,
+            "infrastructure": 8
+          },
+          "nextQid": "R1"
+        },
+        {
+          "text": "Force extraction immediately to reap rewards",
+          "effects": {
+            "economy": 15,
+            "health": -10,
+            "military": 0,
+            "infrastructure": -7
+          },
+          "nextQid": "R1"
+        }
+      ]
+    },
+    "Q17": {
+      "qid": "Q17",
+      "type": "decision",
+      "text": "EVENT 3: The Dwarven Doctrine — With the immediate crisis resolved, the council gathers to define the Dwarven way forward. What defines the dwarven path?",
+      "options": [
+        {
+          "text": "Wealth and Trade — Turn the mountain into a trade empire.",
+          "effects": {
+            "economy": 10,
+            "health": 0,
+            "military": 0,
+            "infrastructure": 4
+          },
+          "nextQid": "Q18"
+        },
+        {
+          "text": "Craftsmanship Above All — Focus on builders, engineers, and artisans.",
+          "effects": {
+            "economy": 0,
+            "health": 4,
+            "military": 0,
+            "infrastructure": 10
+          },
+          "nextQid": "Q19"
+        },
+        {
+          "text": "Fortress of Stone — Prepare for war and maintain massive defenses.",
+          "effects": {
+            "economy": -7,
+            "health": 0,
+            "military": 12,
+            "infrastructure": 4
+          },
+          "nextQid": "Q20"
+        },
+        {
+          "text": "Regulate Foreign Presence — Manage trade and foreign merchants carefully.",
+          "effects": {
+            "economy": 4,
+            "health": 0,
+            "military": 0,
+            "infrastructure": 0
+          },
+          "nextQid": "Q21"
+        }
+      ]
+    },
+    "Q18": {
+      "qid": "Q18",
+      "type": "decision",
+      "text": "Wealth and Trade — Markets expand rapidly, but foreign merchants gain influence inside dwarven cities. How do you respond?",
+      "options": [
+        {
+          "text": "Regulate foreign presence (tight rules and oversight)",
+          "effects": {
+            "economy": 0,
+            "health": 0,
+            "military": 0,
+            "infrastructure": 3
+          },
+          "nextQid": "Q21"
+        },
+        {
+          "text": "Tax foreign merchants heavily to fill the treasury",
+          "effects": {
+            "economy": 8,
+            "health": -6,
+            "military": 0,
+            "infrastructure": 0
+          },
+          "nextQid": "Q23"
+        },
+        {
+          "text": "Let prosperity run its course (minimal intervention)",
+          "effects": {
+            "economy": 7,
+            "health": -5,
+            "military": 0,
+            "infrastructure": 0
+          },
+          "nextQid": "Q24"
+        }
+      ]
+    },
+    "Q19": {
+      "qid": "Q19",
+      "type": "decision",
+      "text": "Craftsmanship Above All — You prioritize artisans, guilds, and design. Do you open guild knowledge to outsiders?",
+      "options": [
+        {
+          "text": "Share selected knowledge for profit and alliances",
+          "effects": {
+            "economy": 8,
+            "health": 0,
+            "military": 0,
+            "infrastructure": 8
+          },
+          "nextQid": "Q33"
+        },
+        {
+          "text": "Guard dwarven secrets — remain unrivaled but isolated",
+          "effects": {
+            "economy": -4,
+            "health": 0,
+            "military": 7,
+            "infrastructure": 0
+          },
+          "nextQid": "Q36"
+        }
+      ]
+    },
+    "Q20": {
+      "qid": "Q20",
+      "type": "decision",
+      "text": "Fortress of Stone → The Living Fortress is completed. Maintaining it drains resources. Your command?",
+      "options": [
+        {
+          "text": "Boost military spending to keep defenses immaculate",
+          "effects": {
+            "economy": -10,
+            "health": 0,
+            "military": 15,
+            "infrastructure": 4
+          },
+          "nextQid": "Q36"
+        },
+        {
+          "text": "Convert parts of the fortress to civic uses to reduce cost (dual-use structures)",
+          "effects": {
+            "economy": 0,
+            "health": 6,
+            "military": -6,
+            "infrastructure": 7
+          },
+          "nextQid": "Q40"
+        }
+      ]
+    },
+    "Q21": {
+      "qid": "Q21",
+      "type": "decision",
+      "text": "Regulate Foreign Presence — A delegation from the surface asks for access. How will you proceed?",
+      "options": [
+        {
+          "text": "Offer limited trade licenses under royal permission",
+          "effects": {
+            "economy": 4,
+            "health": 0,
+            "military": 0,
+            "infrastructure": 3
+          },
+          "nextQid": "Q23"
+        },
+        {
+          "text": "Strengthen diplomatic oversight — tighter rules and monitoring",
+          "effects": {
+            "economy": 0,
+            "health": 0,
+            "military": 0,
+            "infrastructure": 5
+          },
+          "nextQid": "Q25"
+        },
+        {
+          "text": "Nationalize key assets — bring foreign-owned infrastructure under state control",
+          "effects": {
+            "economy": -8,
+            "health": 0,
+            "military": 7,
+            "infrastructure": 8
+          },
+          "nextQid": "Q36"
+        }
+      ]
+    },
+    "Q23": {
+      "qid": "Q23",
+      "type": "decision",
+      "text": "Tax Foreign Merchants Heavily — The treasury swells but whispers spread. How do you allocate and manage the revenue?",
+      "options": [
+        {
+          "text": "Use taxes to fund state expansion (infrastructure and projects)",
+          "effects": {
+            "economy": -4,
+            "health": 0,
+            "military": 0,
+            "infrastructure": 12
+          },
+          "nextQid": "Q36"
+        },
+        {
+          "text": "Increase tax enforcement to squeeze more revenue from merchants",
+          "effects": {
+            "economy": 7,
+            "health": -8,
+            "military": 0,
+            "infrastructure": 0
+          },
+          "nextQid": "Q36"
+        },
+        {
+          "text": "Offer tax relief in exchange for demonstrated loyalty",
+          "effects": {
+            "economy": -6,
+            "health": 6,
+            "military": 0,
+            "infrastructure": 0
+          },
+          "nextQid": "Q36"
+        },
+        {
+          "text": "Share knowledge for profit (sell blueprints, open workshops)",
+          "effects": {
+            "economy": 10,
+            "health": 0,
+            "military": 0,
+            "infrastructure": 8
+          },
+          "nextQid": "Q33"
+        },
+        {
+          "text": "Open the Royal Reserves to buy materials for the people",
+          "effects": {
+            "economy": -10,
+            "health": 12,
+            "military": 0,
+            "infrastructure": 0
+          },
+          "nextQid": "Q26"
+        }
+      ]
+    },
+    "Q26": {
+      "qid": "Q26",
+      "type": "input",
+      "text": "I am the only thing you can keep after giving it to someone else. I cannot be bought, but I can be stolen. I have no value until given away. Once lost, I can never be found. What am I?",
+      "correctAnswer": "Word",
+      "effects": {
+        "economy": 5,
+        "health": 5,
+        "military": 5,
+        "infrastructure": 5
+      },
+      "nextQid": "Q36"
+    },
+    "Q40": {
+      "qid": "Q40",
+      "type": "decision",
+      "text": "Convert Defenses into Dual-Use Structures — Walls become living spaces, training halls, and markets. How will you adapt the Living Fortress?",
+      "options": [
+        {
+          "text": "Reduce military spending and repurpose funds",
+          "effects": {
+            "economy": 6,
+            "health": 6,
+            "military": -9,
+            "infrastructure": 0
+          },
+          "nextQid": "Q41"
+        },
+        {
+          "text": "Train a new generation of dwarves (craftsmanship & trade)",
+          "effects": {
+            "economy": 0,
+            "health": 6,
+            "military": 0,
+            "infrastructure": 7
+          },
+          "nextQid": "Q43"
+        },
+        {
+          "text": "Maintain essential maintenance and keep dual-use balance",
+          "effects": {
+            "economy": 0,
+            "health": 4,
+            "military": 0,
+            "infrastructure": 8
+          },
+          "nextQid": "Q36"
+        }
+      ]
+    },
+    "Q41": {
+      "qid": "Q41",
+      "type": "decision",
+      "text": "Reduce Military Spending — Life improves, but defenses weaken slightly. You must allocate the surplus. Where does the money go?",
+      "options": [
+        {
+          "text": "Invest in Trade Guilds to stimulate commerce",
+          "effects": {
+            "economy": 12,
+            "health": 0,
+            "military": -6,
+            "infrastructure": 4
+          },
+          "nextQid": "Q47"
+        },
+        {
+          "text": "Renovate the Great Hall to restore cultural prestige",
+          "effects": {
+            "economy": -8,
+            "health": 12,
+            "military": -4,
+            "infrastructure": 6
+          },
+          "nextQid": "Q48"
+        },
+        {
+          "text": "Bolster secret intelligence to protect interests cheaply",
+          "effects": {
+            "economy": 0,
+            "health": 0,
+            "military": 8,
+            "infrastructure": 0
+          },
+          "nextQid": "Q49"
+        }
+      ]
+    },
+    "Q47": {
+      "qid": "Q47",
+      "type": "input",
+      "text": "I am always hungry, I must always be fed. The finger I touch will soon turn red. I devour stone and steel alike, yet a single word can end my strike. What am I?",
+      "correctAnswer": "Fire",
+      "effects": {
+        "economy": 5,
+        "health": 5,
+        "military": 5,
+        "infrastructure": 5
+      },
+      "nextQid": "Q36"
+    },
+    "Q48": {
+      "qid": "Q48",
+      "type": "input",
+      "text": "I have no voice, yet I speak to you. I have no wings, yet I fly. I have no eyes, yet I weep. I am born in darkness but die in light. The wisest men have drowned in me. What am I?",
+      "correctAnswer": "DREAM",
+      "effects": {
+        "economy": 5,
+        "health": 5,
+        "military": 5,
+        "infrastructure": 5
+      },
+      "nextQid": "Q36"
+    },
+    "Q49": {
+      "qid": "Q49",
+      "type": "input",
+      "text": "I am the only thing that belongs to you but is used more by others. I am the heaviest burden when empty, and the lightest when full. I am the one thing you cannot give away without keeping it. What am I?",
+      "correctAnswer": "NAME",
+      "effects": {
+        "economy": 5,
+        "health": 5,
+        "military": 5,
+        "infrastructure": 5
+      },
+      "nextQid": "Q36"
+    },
+    "Q43": {
+      "qid": "Q43",
+      "type": "decision",
+      "text": "Train a New Generation of Dwarves — The new smiths must create a final masterpiece for the 'Trial of the Anvil'. Resource shortages force a single approach. How will they prove mastery?",
+      "options": [
+        {
+          "text": "Refine Ancient Techniques — perfect traditional methods",
+          "effects": {
+            "economy": 0,
+            "health": 8,
+            "military": 0,
+            "infrastructure": 7
+          },
+          "nextQid": "Q50"
+        },
+        {
+          "text": "Mass Production Study — design efficient tools to jumpstart growth",
+          "effects": {
+            "economy": 12,
+            "health": -6,
+            "military": 0,
+            "infrastructure": 7
+          },
+          "nextQid": "Q51"
+        },
+        {
+          "text": "Experimental Alloys — embrace risky innovation with volatile crystals",
+          "effects": {
+            "economy": 8,
+            "health": -8,
+            "military": 4,
+            "infrastructure": 12
+          },
+          "nextQid": "Q52"
+        }
+      ]
+    },
+    "Q50": {
+      "qid": "Q50",
+      "type": "input",
+      "text": "I am older than the mountain, yet renewed with each master. I am taught but never learned, for I live in the hands, not the mind. What am I?",
+      "correctAnswer": "TRADITION",
+      "effects": {
+        "economy": 5,
+        "health": 5,
+        "military": 5,
+        "infrastructure": 5
+      },
+      "nextQid": "Q36"
+    },
+    "Q51": {
+      "qid": "Q51",
+      "type": "input",
+      "text": "I turn one into many, effort into ease. I am the child of necessity, the parent of wealth. Without me, progress crawls; with me, it races. What am I?",
+      "correctAnswer": "EFFICIENCY",
+      "effects": {
+        "economy": 5,
+        "health": 5,
+        "military": 5,
+        "infrastructure": 5
+      },
+      "nextQid": "Q36"
+    },
+    "Q52": {
+      "qid": "Q52",
+      "type": "input",
+      "text": "I am born in risk and tempered by failure. I break what came before to build what comes next. I am the forge of progress, but also its graveyard. What am I?",
+      "correctAnswer": "INNOVATION",
+      "effects": {
+        "economy": 5,
+        "health": 5,
+        "military": 5,
+        "infrastructure": 5
+      },
+      "nextQid": "Q36"
+    },
+    "Q24": {
+      "qid": "Q24",
+      "type": "input",
+      "text": "I grow when left alone, shrink when controlled too much. I am the tide that lifts all boats, but also drowns the unwary. What am I?",
+      "correctAnswer": "MARKET",
+      "effects": {
+        "economy": 5,
+        "health": 5,
+        "military": 5,
+        "infrastructure": 5
+      },
+      "nextQid": "Q36"
+    },
+    "Q25": {
+      "qid": "Q25",
+      "type": "input",
+      "text": "I am the invisible chain that guides the visible hand. I am the framework within which freedom dances. Too loose, and chaos reigns; too tight, and progress suffocates. What am I?",
+      "correctAnswer": "REGULATION",
+      "effects": {
+        "economy": 5,
+        "health": 5,
+        "military": 5,
+        "infrastructure": 5
+      },
+      "nextQid": "Q36"
+    },
+    "Q34": {
+      "qid": "Q34",
+      "type": "input",
+      "text": "I can be sold but never bought, shared but never halved. The more you give me away, the more powerful you become. What am I?",
+      "correctAnswer": "KNOWLEDGE",
+      "effects": {
+        "economy": 5,
+        "health": 5,
+        "military": 5,
+        "infrastructure": 5
+      },
+      "nextQid": "Q36"
+    },
+    "Q36": {
+      "qid": "Q36",
+      "type": "decision",
+      "text": "🏆 EVENT 3 COMPLETE — The council's decision defines the Dwarven Doctrine for this era. Proceed to the Final Trial or investigate a newly reported rich vein?",
+      "options": [
+        {
+          "text": "Proceed to the Final Trial (riddles)",
+          "effects": {
+            "economy": 0,
+            "health": 0,
+            "military": 0,
+            "infrastructure": 0
+          },
+          "nextQid": "R1"
+        },
+        {
+          "text": "Investigate the rich vein before the Trial",
+          "effects": {
+            "economy": 0,
+            "health": 0,
+            "military": 0,
+            "infrastructure": 0
+          },
+          "nextQid": "Q16"
+        }
+      ]
+    },
+    "R1": {
+      "qid": "R1",
+      "type": "input",
+      "text": "🧠 RIDDLE 1: I increase when you build nothing, decrease when you build too much, and disappear when you build blindly.",
+      "correctAnswer": "STABILITY",
+      "effects": {
+        "economy": 5,
+        "health": 5,
+        "military": 5,
+        "infrastructure": 5
+      },
+      "nextQid": "R2"
+    },
+    "R2": {
+      "qid": "R2",
+      "type": "input",
+      "text": "🧠 RIDDLE 2 (TRANSPORT): In our city, nothing moves without me, yet no one ever travels on me. When I am misjudged, traffic jams appear underground. What was misjudged?",
+      "correctAnswer": "CAPACITY",
+      "effects": {
+        "economy": 5,
+        "health": 5,
+        "military": 5,
+        "infrastructure": 5
+      },
+      "nextQid": "R3"
+    },
+    "R3": {
+      "qid": "R3",
+      "type": "input",
+      "text": "🧠 RIDDLE 3 (DRAINAGE): Water never asks permission. It follows me every time. Build me wrong, and homes flood. Build me right, and no one notices. What am I?",
+      "correctAnswer": "GRADIENT",
+      "effects": {
+        "economy": 5,
+        "health": 5,
+        "military": 5,
+        "infrastructure": 5
+      },
+      "nextQid": "R4"
+    },
+    "R4": {
+      "qid": "R4",
+      "type": "input",
+      "text": "🧠 RIDDLE 4 (CITY MOVEMENT): Guards widen me to calm trade. Narrow me, and control becomes easier. I decide who meets whom. What am I?",
+      "correctAnswer": "ROUTES",
+      "effects": {
+        "economy": 5,
+        "health": 5,
+        "military": 5,
+        "infrastructure": 5
+      },
+      "nextQid": "R5"
+    },
+    "R5": {
+      "qid": "R5",
+      "type": "input",
+      "text": "🧠 RIDDLE 5: The Dwarves worshipped ancestors, but feared me more than gods, because I never forgive.",
+      "correctAnswer": "GRAVITY",
+      "effects": {
+        "economy": 5,
+        "health": 5,
+        "military": 5,
+        "infrastructure": 5
+      },
+      "nextQid": "R6"
+    },
+    "R6": {
+      "qid": "R6",
+      "type": "input",
+      "text": "🧠 RIDDLE 6: I move slower than armies, faster than laws, and once I start, even kings evacuate.",
+      "correctAnswer": "LANDSLIDE",
+      "effects": {
+        "economy": 5,
+        "health": 5,
+        "military": 5,
+        "infrastructure": 5
+      },
+      "nextQid": "R7"
+    },
+    "R7": {
+      "qid": "R7",
+      "type": "input",
+      "text": "🧠 RIDDLE 7: SimCity rewards me early, punishes me late, and hides my limit completely.",
+      "correctAnswer": "DENSITY",
+      "effects": {
+        "economy": 5,
+        "health": 5,
+        "military": 5,
+        "infrastructure": 5
+      },
+      "nextQid": "R8"
+    },
+    "R8": {
+      "qid": "R8",
+      "type": "input",
+      "text": "🧠 RIDDLE 8: The Dwarves blamed workers for me, generals blamed spies, but engineers blamed time.",
+      "correctAnswer": "FATIGUE",
+      "effects": {
+        "economy": 5,
+        "health": 5,
+        "military": 5,
+        "infrastructure": 5
+      },
+      "nextQid": "R9"
+    },
+    "R9": {
+      "qid": "R9",
+      "type": "input",
+      "text": "🧠 RIDDLE 9: I am strongest when invisible, weakest when displayed, and fatal when ignored.",
+      "correctAnswer": "LOAD",
+      "effects": {
+        "economy": 5,
+        "health": 5,
+        "military": 5,
+        "infrastructure": 5
+      },
+      "nextQid": "R10"
+    },
+    "R10": {
+      "qid": "R10",
+      "type": "input",
+      "text": "🧠 RIDDLE 10: In peace I am a statistic. In war I am a weapon. In collapse I am irrelevant.",
+      "correctAnswer": "POPULATION",
+      "effects": {
+        "economy": 5,
+        "health": 5,
+        "military": 5,
+        "infrastructure": 5
+      },
+      "nextQid": "R11"
+    },
+    "R11": {
+      "qid": "R11",
+      "type": "input",
+      "text": "🧠 RIDDLE 11: The city grew richer every year, yet poorer every decade. I was never taxed.",
+      "correctAnswer": "MAINTENANCE",
+      "effects": {
+        "economy": 5,
+        "health": 5,
+        "military": 5,
+        "infrastructure": 5
+      },
+      "nextQid": "R12"
+    },
+    "R12": {
+      "qid": "R12",
+      "type": "input",
+      "text": "🧠 RIDDLE 12: I increase economy today, decrease health tomorrow, and rewrite history next generation.",
+      "correctAnswer": "POLLUTION",
+      "effects": {
+        "economy": 5,
+        "health": 5,
+        "military": 5,
+        "infrastructure": 5
+      },
+      "nextQid": "R13"
+    },
+    "R13": {
+      "qid": "R13",
+      "type": "input",
+      "text": "🧠 RIDDLE 13: The Dwarves sealed me once, and the city survived. They opened me again, and legends were born—or buried.",
+      "correctAnswer": "FAULT LINE",
+      "effects": {
+        "economy": 5,
+        "health": 5,
+        "military": 5,
+        "infrastructure": 5
+      },
+      "nextQid": "R14"
+    },
+    "R14": {
+      "qid": "R14",
+      "type": "input",
+      "text": "🧠 RIDDLE 14: SimCity lets you pause me, but reality never does. Dwarves respect me more than kings.",
+      "correctAnswer": "TIME",
+      "effects": {
+        "economy": 5,
+        "health": 5,
+        "military": 5,
+        "infrastructure": 5
+      },
+      "nextQid": "R15"
+    },
+    "R15": {
+      "qid": "R15",
+      "type": "input",
+      "text": "🧠 RIDDLE 15: I do not exist in maps, only in meetings, yet wars are fought because of me.",
+      "correctAnswer": "POLICY",
+      "effects": {
+        "economy": 5,
+        "health": 5,
+        "military": 5,
+        "infrastructure": 5
+      },
+      "nextQid": "R16"
+    },
+    "R16": {
+      "qid": "R16",
+      "type": "input",
+      "text": "🧠 RIDDLE 16: The deeper the city went, the smaller I became, until progress stopped entirely.",
+      "correctAnswer": "MARGIN OF ERROR",
+      "effects": {
+        "economy": 5,
+        "health": 5,
+        "military": 5,
+        "infrastructure": 5
+      },
+      "nextQid": "R17"
+    },
+    "R17": {
+      "qid": "R17",
+      "type": "input",
+      "text": "🧠 RIDDLE 17: The council ignored me because I had no voice, but when I finally spoke, the mountain answered.",
+      "correctAnswer": "PRESSURE",
+      "effects": {
+        "economy": 5,
+        "health": 5,
+        "military": 5,
+        "infrastructure": 5
+      },
+      "nextQid": "R18"
+    },
+    "R18": {
+      "qid": "R18",
+      "type": "input",
+      "text": "🧠 RIDDLE 18: SimCity calls me a slider. The Dwarves called me a curse. Engineers called me inevitable.",
+      "correctAnswer": "TRADEOFF",
+      "effects": {
+        "economy": 5,
+        "health": 5,
+        "military": 5,
+        "infrastructure": 5
+      },
+      "nextQid": "R19"
+    },
+    "R19": {
+      "qid": "R19",
+      "type": "input",
+      "text": "🧠 RIDDLE 19: I grow faster than cities, slower than disasters, and never where planned.",
+      "correctAnswer": "SPRAWL",
+      "effects": {
+        "economy": 5,
+        "health": 5,
+        "military": 5,
+        "infrastructure": 5
+      },
+      "nextQid": "R20"
+    },
+    "R20": {
+      "qid": "R20",
+      "type": "input",
+      "text": "🧠 RIDDLE 20 (FINAL BOSS): When all four stats are high, I decide whether the city lives. When all four are low, I decide whether it dies quietly or violently.",
+      "correctAnswer": "GOVERNANCE",
+      "effects": {
+        "economy": 5,
+        "health": 5,
+        "military": 5,
+        "infrastructure": 5
+      },
+      "isEnd": true,
+      "endType": "success"
+    },
+    "E1_FAIL": {
+      "qid": "E1_FAIL",
+      "type": "input",
+      "text": "👎 HARSH CRACKDOWN — The miners revolt in secret; unrest spreads. To accept your fate, answer: What is the sound of a kingdom falling? (1 word)",
+      "correctAnswer": "SILENCE",
+      "effects": {
+        "economy": -10,
+        "health": -10,
+        "military": 15,
+        "infrastructure": -10
+      },
+      "isEnd": true,
+      "endType": "failure"
+    }
+  }
+} 
