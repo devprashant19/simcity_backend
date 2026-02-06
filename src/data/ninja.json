@@ -61,7 +61,7 @@
 			"qid": "Q4",
 			"type": "input",
 			"text": "To target criminals effectively, you must understand: What is the difference between justice and vengeance? (One word)",
-			"correctAnswer": "Mercy",
+			"correctAnswer": "Ruthfulness",
 			"effects": { "military": 8, "health": 1, "economy": -2, "infrastructure": -1 },
 			"nextQid": "Q5"
 		},
@@ -69,7 +69,7 @@
 			"qid": "Q5",
 			"type": "input",
 			"text": "Targeting the wealthy requires strategy: What grows when taken, but shrinks when shared among thieves?",
-			"correctAnswer": "Suspicion",
+			"correctAnswer": "Suspiciousness",
 			"effects": { "military": 5, "health": -6, "economy": 12, "infrastructure": -3 },
 			"nextQid": "Q6"
 		},
@@ -119,7 +119,7 @@
 			"qid": "Q9",
 			"type": "input",
 			"text": "To surrender honorably, you must know: What is stronger than weapons but cannot be held?",
-			"correctAnswer": "Peace",
+			"correctAnswer": "Serenity",
 			"effects": { "military": -3, "health": 4, "economy": -2, "infrastructure": -1 },
 			"nextQid": "Q10"
 		},
@@ -127,7 +127,7 @@
 			"qid": "Q10",
 			"type": "input",
 			"text": "We shall introduce schools. To build proper education, answer: What teaches without speaking?",
-			"correctAnswer": "Experience",
+			"correctAnswer": "Proficiency",
 			"effects": { "military": 6, "health": 7, "economy": -2, "infrastructure": 6 },
 			"nextQid": "Q11"
 		},
@@ -167,7 +167,7 @@
 		"Q14": {
 			"qid": "Q14",
 			"type": "decision",
-			"text": "#Mission 1: A critical bridge connects the city to trade routes. It's damaged after a storm. Enemies may exploit it.",
+			"text": " A critical bridge connects the city to trade routes. It's damaged after a storm. Enemies may exploit it.",
 			"options": [
 				{
 					"text": "A. Send ninjas to repair secretly at night",
@@ -192,7 +192,7 @@
 		"Q16": {
 			"qid": "Q16",
 			"type": "decision",
-			"text": "#MISSION 1 — THE COLLAPSING TUNNELS: Old underground tunnels (used by ninjas) are collapsing under the city.",
+			"text": "THE COLLAPSING TUNNELS: Old underground tunnels (used by ninjas) are collapsing under the city.",
 			"options": [
 				{
 					"text": "A. Reinforce tunnels properly",
@@ -260,7 +260,7 @@
 		"Q21": {
 			"qid": "Q21",
 			"type": "decision",
-			"text": "#Mission 1: Build",
+			"text": " Build",
 			"options": [
 				{
 					"text": "Build a training facility camp",
@@ -359,15 +359,15 @@
 		"Q30": {
 			"qid": "Q30",
 			"type": "decision",
-			"text": "#Mission 1: Capture a Dragon",
+			"text": "Capture a Dragon",
 			"options": [
 				{
-					"text": "Accept the mission (H +10, M +13)",
+					"text": "Accept the mission ",
 					"effects": { "military": 13, "health": 10, "economy": 6, "infrastructure": 4 },
 					"nextQid": "Q35"
 				},
 				{
-					"text": "Reject the mission (M -2, H +1)",
+					"text": "Reject the mission ",
 					"effects": { "military": -2, "health": 3, "economy": -1, "infrastructure": 0 },
 					"nextQid": "Q35"
 				}
@@ -384,7 +384,7 @@
 		"Q32": {
 			"qid": "Q32",
 			"type": "input",
-			"text": "#Mission 1: Escort the feudal lord. For successful escort: What is more valuable than speed?",
+			"text": " Escort the feudal lord. For successful escort: What is more valuable than speed?",
 			"correctAnswer": "Awareness",
 			"effects": { "military": 8, "health": 3, "economy": 2, "infrastructure": 2 },
 			"nextQid": "Q33"
@@ -433,7 +433,7 @@
 		"Q37": {
 			"qid": "Q37",
 			"type": "input",
-			"text": "#Mission 1: Escort the feudal lord. Without experience: What cannot be taught?",
+			"text": " Escort the feudal lord. Without experience: What cannot be taught?",
 			"correctAnswer": "Wisdom",
 			"effects": { "military": 8, "health": 3, "economy": 2, "infrastructure": 2 },
 			"nextQid": "Q38"
@@ -490,7 +490,7 @@
 		"Q43": {
 			"qid": "Q43",
 			"type": "decision",
-			"text": "#Mission 1: Capture a source of fruit that powers up your ninjas, but requires challenges and sacrifices.",
+			"text": " Capture a source of fruit that powers up your ninjas, but requires challenges and sacrifices.",
 			"options": [
 				{
 					"text": "Abandon the mission (major stat difference)",
@@ -523,7 +523,7 @@
 		"Q50": {
 			"qid": "Q50",
 			"type": "decision",
-			"text": "Q1. The city's underground drainage canals are blocked. Flooding will spread disease, but repairs will expose secret ninja tunnels.",
+			"text": " The city's underground drainage canals are blocked. Flooding will spread disease, but repairs will expose secret ninja tunnels.",
 			"options": [
 				{
 					"text": "A. Clear drainage fully, abandon tunnels",
@@ -550,7 +550,7 @@
 		"Q51": {
 			"qid": "Q51",
 			"type": "decision",
-			"text": "Q2. A major transport road passes through a civilian market and a ninja supply route. Traffic jams are rising.",
+			"text": "A major transport road passes through a civilian market and a ninja supply route. Traffic jams are rising.",
 			"options": [
 				{
 					"text": "A. Reroute civilians away from the road",
@@ -577,7 +577,7 @@
 		"Q52": {
 			"qid": "Q52",
 			"type": "decision",
-			"text": "Q3. Restaurants near the academy dump waste illegally, poisoning water sources but feeding thousands cheaply.",
+			"text": " Restaurants near the academy dump waste illegally, poisoning water sources but feeding thousands cheaply.",
 			"options": [
 				{
 					"text": "A. Shut down offending restaurants",
@@ -604,7 +604,7 @@
 		"Q53": {
 			"qid": "Q53",
 			"type": "decision",
-			"text": "Q4. A trade district wants night markets. Ninjas warn it reduces patrol visibility.",
+			"text": " A trade district wants night markets. Ninjas warn it reduces patrol visibility.",
 			"options": [
 				{
 					"text": "A. Allow night markets, increase lighting",
@@ -631,7 +631,7 @@
 		"Q54": {
 			"qid": "Q54",
 			"type": "decision",
-			"text": "Q5. Public bathhouses improve hygiene but are perfect places for information leaks.",
+			"text": " Public bathhouses improve hygiene but are perfect places for information leaks.",
 			"options": [
 				{
 					"text": "A. Keep bathhouses open, monitor secretly",
@@ -658,7 +658,7 @@
 		"Q55": {
 			"qid": "Q55",
 			"type": "decision",
-			"text": "Q6. A new residential block can house civilians OR returning injured ninjas. Space allows only one.",
+			"text": " A new residential block can house civilians OR returning injured ninjas. Space allows only one.",
 			"options": [
 				{
 					"text": "A. House injured ninjas",
@@ -685,7 +685,7 @@
 		"Q56": {
 			"qid": "Q56",
 			"type": "decision",
-			"text": "Q7. Food supply routes pass through a high-crime slum. Fixing the area is costly.",
+			"text": " Food supply routes pass through a high-crime slum. Fixing the area is costly.",
 			"options": [
 				{
 					"text": "A. Improve sanitation and policing",
@@ -712,7 +712,7 @@
 		"Q57": {
 			"qid": "Q57",
 			"type": "decision",
-			"text": "Q8. Irrigation can be repaired or weaponized.",
+			"text": "Irrigation can be repaired or weaponized.",
 			"options": [
 				{
 					"text": "A. Repair fully",
@@ -739,7 +739,7 @@
 		"Q58": {
 			"qid": "Q58",
 			"type": "decision",
-			"text": "Q9. A bridge is unstable but critical.",
+			"text": " A bridge is unstable but critical.",
 			"options": [
 				{
 					"text": "A. Quick reinforcement",
@@ -766,7 +766,7 @@
 		"Q59": {
 			"qid": "Q59",
 			"type": "decision",
-			"text": "Q10. Refugees block supply routes.",
+			"text": " Refugees block supply routes.",
 			"options": [
 				{
 					"text": "A. Relocate them",
@@ -793,7 +793,7 @@
 		"Q60": {
 			"qid": "Q60",
 			"type": "decision",
-			"text": "Q11. Old tunnels are collapsing.",
+			"text": " Old tunnels are collapsing.",
 			"options": [
 				{
 					"text": "A. Reinforce",
@@ -820,7 +820,7 @@
 		"Q61": {
 			"qid": "Q61",
 			"type": "decision",
-			"text": "Q12. Food stores are contaminated.",
+			"text": " Food stores are contaminated.",
 			"options": [
 				{
 					"text": "A. Distribute anyway",
@@ -847,7 +847,7 @@
 		"Q62": {
 			"qid": "Q62",
 			"type": "decision",
-			"text": "Q13. Bandits control a factory district.",
+			"text": "Bandits control a factory district.",
 			"options": [
 				{
 					"text": "A. Assault directly",
@@ -874,7 +874,7 @@
 		"Q63": {
 			"qid": "Q63",
 			"type": "decision",
-			"text": "Q14. A road expansion slows troop movement.",
+			"text": " A road expansion slows troop movement.",
 			"options": [
 				{
 					"text": "A. Pause expansion",
@@ -901,15 +901,15 @@
 		"Q64": {
 			"qid": "Q64",
 			"type": "input",
-			"text": "🍀 Riddle 1: I am created once, then corrected forever. Ninjas exploit my mistakes, cities pay for my absence, and no emergency can fix me in time. I am never urgent, until it is too late. What am I?",
-			"correctAnswer": "Design",
+			"text": " I am created once, then corrected forever. Ninjas exploit my mistakes, cities pay for my absence, and no emergency can fix me in time. I am never urgent, until it is too late. What am I?",
+			"correctAnswer": "Architecture",
 			"effects": { "military": 5, "health": 5, "economy": 5, "infrastructure": 5 },
 			"nextQid": "Q65"
 		},
 		"Q65": {
 			"qid": "Q65",
 			"type": "input",
-			"text": "🍀 Riddle 2: I do not move people, but people move because of me. When I am smooth, speed is invisible. When I am broken, blame is loud. Ninjas map me before missions, yet never fight on me. What am I?",
+			"text": "I do not move people, but people move because of me. When I am smooth, speed is invisible. When I am broken, blame is loud. Ninjas map me before missions, yet never fight on me. What am I?",
 			"correctAnswer": "Flow",
 			"effects": { "military": 5, "health": 5, "economy": 5, "infrastructure": 5 },
 			"nextQid": "Q66"
@@ -917,7 +917,7 @@
 		"Q66": {
 			"qid": "Q66",
 			"type": "input",
-			"text": "Riddle 3: I do not fight, yet wars are lost without me. I rot silently while victories are celebrated. When I fail, even the strongest kneel. What am I?",
+			"text": " I do not fight, yet wars are lost without me. I rot silently while victories are celebrated. When I fail, even the strongest kneel. What am I?",
 			"correctAnswer": "Logistics",
 			"effects": { "military": 5, "health": 5, "economy": 5, "infrastructure": 5 },
 			"nextQid": "Q67"
@@ -925,31 +925,31 @@
 		"Q67": {
 			"qid": "Q67",
 			"type": "input",
-			"text": "🍀 Riddle 4: I increase when control weakens, but also when control tightens. I disappear only when systems replace force. Ninjas suppress me, armies provoke me, and cities collapse if I outlive patience. What am I?",
-			"correctAnswer": "Tension",
+			"text": " I increase when control weakens, but also when control tightens. I disappear only when systems replace force. Ninjas suppress me, armies provoke me, and cities collapse if I outlive patience. What am I?",
+			"correctAnswer": "Nervousness",
 			"effects": { "military": 5, "health": 5, "economy": 5, "infrastructure": 5 },
 			"nextQid": "Q68"
 		},
 		"Q68": {
 			"qid": "Q68",
 			"type": "input",
-			"text": "🍀 Riddle 5: I am not secrecy, but secrecy depends on me. I am not law, but law fails without me. Ninjas enforce me indirectly, cities violate me unknowingly. What am I?",
-			"correctAnswer": "Boundaries",
+			"text": "I am not secrecy, but secrecy depends on me. I am not law, but law fails without me. Ninjas enforce me indirectly, cities violate me unknowingly. What am I?",
+			"correctAnswer": "Jurisdiction",
 			"effects": { "military": 5, "health": 5, "economy": 5, "infrastructure": 5 },
 			"nextQid": "Q69"
 		},
 		"Q69": {
 			"qid": "Q69",
 			"type": "input",
-			"text": "🍀 Riddle 6: I look like discipline from above, and like delay from below. Ninjas exploit me to stay hidden. Merchants hate me, planners defend me, and emergencies expose my cost. What am I?",
-			"correctAnswer": "Procedure",
+			"text": "I look like discipline from above, and like delay from below. Ninjas exploit me to stay hidden. Merchants hate me, planners defend me, and emergencies expose my cost. What am I?",
+			"correctAnswer": "Bureaucracy",
 			"effects": { "military": 5, "health": 5, "economy": 5, "infrastructure": 5 },
 			"nextQid": "Q70"
 		},
 		"Q70": {
 			"qid": "Q70",
 			"type": "input",
-			"text": "🍀 Riddle 7: I decide who leads before battles begin. Those who fail me may still win wars, but never command them. What am I?",
+			"text": "I decide who leads before battles begin. Those who fail me may still win wars, but never command them. What am I?",
 			"correctAnswer": "Judgment",
 			"effects": { "military": 5, "health": 5, "economy": 5, "infrastructure": 5 },
 			"nextQid": "Q71"
@@ -957,15 +957,15 @@
 		"Q71": {
 			"qid": "Q71",
 			"type": "input",
-			"text": "🍀 Riddle 8: I am trained in shadows, but measured in daylight. If I grow too fast, I break. If too slow, I am replaced. What am I?",
-			"correctAnswer": "Academy",
+			"text": " I am trained in shadows, but measured in daylight. If I grow too fast, I break. If too slow, I am replaced. What am I?",
+			"correctAnswer": "Institutions",
 			"effects": { "military": 5, "health": 5, "economy": 5, "infrastructure": 5 },
 			"nextQid": "Q72"
 		},
 		"Q72": {
 			"qid": "Q72",
 			"type": "input",
-			"text": "🍀 Riddle 9: I save lives quietly, but am blamed loudly. When removed, heroes increase and cities fall. What am I?",
+			"text": " I save lives quietly, but am blamed loudly. When removed, heroes increase and cities fall. What am I?",
 			"correctAnswer": "Infrastructure",
 			"effects": { "military": 5, "health": 5, "economy": 5, "infrastructure": 5 },
 			"nextQid": "Q73"
@@ -973,23 +973,23 @@
 		"Q73": {
 			"qid": "Q73",
 			"type": "input",
-			"text": "🍀 Riddle 10: I look like kindness, feel like weakness, but outlive brutality. What am I?",
-			"correctAnswer": "Mercy",
+			"text": " I look like kindness, feel like weakness, but outlive brutality. What am I?",
+			"correctAnswer": "Grace",
 			"effects": { "military": 5, "health": 5, "economy": 5, "infrastructure": 5 },
 			"nextQid": "Q74"
 		},
 		"Q74": {
 			"qid": "Q74",
 			"type": "input",
-			"text": "🍀 Riddle 11: I create warriors quickly, but commanders slowly. Those who skip me regret it later. What am I?",
-			"correctAnswer": "Experience",
+			"text": " I create warriors quickly, but commanders slowly. Those who skip me regret it later. What am I?",
+			"correctAnswer": "Proficiency",
 			"effects": { "military": 5, "health": 5, "economy": 5, "infrastructure": 5 },
 			"nextQid": "Q75"
 		},
 		"Q75": {
 			"qid": "Q75",
 			"type": "input",
-			"text": "🍀 Riddle 12: I am taken from the poor, counted by the rich, and worshipped by rulers. Yet I cannot heal anyone. What am I?",
+			"text": "I am taken from the poor, counted by the rich, and worshipped by rulers. Yet I cannot heal anyone. What am I?",
 			"correctAnswer": "Economy",
 			"effects": { "military": 5, "health": 5, "economy": 5, "infrastructure": 5 },
 			"nextQid": "Q76"
@@ -997,16 +997,16 @@
 		"Q76": {
 			"qid": "Q76",
 			"type": "input",
-			"text": "🍀 Riddle 13: I do not appear on maps, but decide their borders. Ignore me and rebellions rise. What am I?",
-			"correctAnswer": "Trust",
+			"text": " I do not appear on maps, but decide their borders. Ignore me and rebellions rise. What am I?",
+			"correctAnswer": "Assurance",
 			"effects": { "military": 5, "health": 5, "economy": 5, "infrastructure": 5 },
 			"nextQid": "Q77"
 		},
 		"Q77": {
 			"qid": "Q77",
 			"type": "input",
-			"text": "🍀 Riddle 14: I am the final test. Those who seek me fail. Those who avoid me earn it. What am I?",
-			"correctAnswer": "Authority",
+			"text": " I am the final test. Those who seek me fail. Those who avoid me earn it. What am I?",
+			"correctAnswer": "Sovereignty",
 			"effects": { "military": 5, "health": 5, "economy": 5, "infrastructure": 5 },
 			"nextQid": "Q78"
 		},
@@ -1099,26 +1099,23 @@
 				{
 					"text": "A. Outer districts",
 					"effects": { "military": -2, "health": 2, "economy": 1, "infrastructure": 2 },
-					"isEnd": true,
-					"endType": "success"
+					"nextQid": "END"
 				},
 				{
 					"text": "B. City center",
 					"effects": { "military": -3, "health": -1, "economy": 3, "infrastructure": 2 },
-					"isEnd": true,
-					"endType": "success"
+					"nextQid": "END"
 				},
 				{
 					"text": "C. Underground systems",
 					"effects": { "military": 4, "health": 1, "economy": 2, "infrastructure": -3 },
-					"isEnd": true,
-					"endType": "success"
+					"nextQid": "END"
 				},
 				{
 					"text": "D. Administrative core",
 					"effects": { "military": -2, "health": 2, "economy": 2, "infrastructure": 1 },
-					"isEnd": true,
-					"endType": "success"
+					"nextQid": "END"
+					
 				}
 			]
 		}
