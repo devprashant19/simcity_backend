@@ -2,22 +2,36 @@ const User = require("../models/User");
 
 exports.infrastructureLeaderboard = async (req, res) => {
   try {
+    // 1. Fetch all users
     const users = await User.find(
       {},
       {
         username: 1,
         power: 1
       }
-    ).sort({ "power.infrastructure": -1 });
+    );
+
+    // 2. Calculate Total Power & Sort in JS (easier than Aggregate for simple summation)
+    const sortedUsers = users.map(user => {
+      const totalPower =
+        (user.power.economy || 0) +
+        (user.power.military || 0) +
+        (user.power.health || 0) +
+        (user.power.infrastructure || 0);
+
+      return {
+        ...user.toObject(),
+        totalPower
+      };
+    }).sort((a, b) => b.totalPower - a.totalPower);
 
     let leaderboard = [];
     let rank = 1;
-    let prevInfra = null;
+    let prevPower = null;
 
-    users.forEach((user, index) => {
-      const infra = user.power.infrastructure;
+    sortedUsers.forEach((user, index) => {
 
-      if (infra !== prevInfra) {
+      if (user.totalPower !== prevPower) {
         rank = index + 1;
       }
 
@@ -28,10 +42,11 @@ exports.infrastructureLeaderboard = async (req, res) => {
         economy: user.power.economy,
         military: user.power.military,
         health: user.power.health,
-        infrastructure: user.power.infrastructure
+        infrastructure: user.power.infrastructure,
+        totalPower: user.totalPower
       });
 
-      prevInfra = infra;
+      prevPower = user.totalPower;
     });
 
     res.json({
