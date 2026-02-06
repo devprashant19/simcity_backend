@@ -35,9 +35,15 @@ exports.attackUser = async (req, res) => {
         attacker.attacksLeft -= 1; // Decrement limit
 
         // Defender Penalties
-        defender.power.infrastructure -= 8;
+        defender.power.economy -= 3;
+        defender.power.health -= 2;
+        defender.power.military -= 3;
+        defender.power.infrastructure -= 4;
 
         // Boundary Checks (Min 0)
+        if (defender.power.economy < 0) defender.power.economy = 0;
+        if (defender.power.health < 0) defender.power.health = 0;
+        if (defender.power.military < 0) defender.power.military = 0;
         if (defender.power.infrastructure < 0) defender.power.infrastructure = 0;
 
         await attacker.save();
