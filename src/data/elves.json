@@ -412,13 +412,13 @@
     },
 
     "Q20": {
-      "qid": "Q20",
-      "type": "input",
-      "text": "A mage predicts rain with 100% accuracy but speaks only on dry days. Today he speaks. Will it rain tomorrow?",
-      "correctAnswer": "Yes",
-      "effects": { "health": 5, "economy": 5, "infrastructure": 5, "military": 5 },
-      "nextQid": "Q21"
-    },
+  "qid": "Q20",
+  "type": "input",
+  "text": "The court’s most truthful tongue awakens only when the sky withholds its silver tribute. Today, his prophecy escapes into a day unmarked by falling mirrors. When the next sun lifts the curtain of night, what emptiness will still rule the clouds?",
+  "correctAnswer": "Drought",
+  "effects": { "health": 5, "economy": 5, "infrastructure": 5, "military": 5 },
+  "nextQid": "Q21"
+},
 
     "Q21": {
       "qid": "Q21",
@@ -511,22 +511,22 @@
     },
 
     "Q31": {
-      "qid": "Q31",
-      "type": "input",
-      "text": "A demon lies on even days. Today he says 'I lie today'. What day is it?",
-      "correctAnswer": "Even",
-      "effects": { "health": 5, "economy": 5, "infrastructure": 5, "military": 5 },
-      "nextQid": "Q32"
-    },
+  "qid": "Q31",
+  "type": "input",
+  "text": "A horned oracle poisons truth whenever the calendar falls into its most balanced rhythm. Today, he declares that his own tongue is corrupted. His words fold upon themselves like a serpent devouring its tail. What philosophical knot has the day become?",
+  "correctAnswer": "Paradox",
+  "effects": { "health": 5, "economy": 5, "infrastructure": 5, "military": 5 },
+  "nextQid": "Q32"
+},
 
-    "Q32": {
-      "qid": "Q32",
-      "type": "input",
-      "text": "Peace exists only if the army trains, but training happens only in peace. Is peace possible?",
-      "correctAnswer": "No",
-      "effects": { "health": 5, "economy": 5, "infrastructure": 5, "military": 5 },
-      "nextQid": "Q33"
-    },
+   "Q32": {
+  "qid": "Q32",
+  "type": "input",
+  "text": "A kingdom seeks calm seas, yet its shields are forged only in storms. But the storms are summoned only when the shields already stand ready. Thus, the realm circles its own desire like a hound chasing its tail. What fate grips such a throne?",
+  "correctAnswer": "Impossibility",
+  "effects": { "health": 5, "economy": 5, "infrastructure": 5, "military": 5 },
+  "nextQid": "Q33"
+},
 
     "Q33": {
       "qid": "Q33",
@@ -604,7 +604,7 @@
       "qid": "Q41",
       "type": "input",
       "text": "A prophecy fades if obeyed and comes true if ignored. What kind is it?",
-      "correctAnswer": "Self-fulfilling",
+      "correctAnswer": "Self_fulfilling",
       "effects": { "health": 5, "economy": 5, "infrastructure": 5, "military": 5 },
       "nextQid": "Q42"
     },
@@ -633,7 +633,66 @@
       "text": "A ruler rewards only visible achievements. What was undervalued?",
       "correctAnswer": "Maintenance",
       "effects": { "health": 5, "economy": 5, "infrastructure": 5, "military": 5 },
-      "nextQid": "END"
-    }
+      "nextQid": "Q45"
+    },
+    "Q45": {
+  "qid": "Q45",
+  "type": "input",
+  "text": "I am the child of paradox, born from contradictory union. The progenitor of all maps, yet unmappable. The architect of sequence that denies succession. What is my name?",
+  "correctAnswer": "The Cantor set",
+  "hint": "Consider mathematical objects that contain infinite complexity within finite bounds, and whose properties defy Euclidean intuition.",
+  "effects": { "health": 5, "economy": 5, "infrastructure": 5, "military": 5 },
+  "nextQid": "Q46"
+},
+
+"Q46": {
+  "qid": "Q46",
+  "type": "input", 
+  "text": "I am the union of orthogonal complements in Hilbert space, the whisper between superposed states. I am measured by decoherence, defined by my absence. Von Neumann's ghost, Schrödinger's irony. What am I?",
+  "correctAnswer": "Quantum coherence",
+  "hint": "Consider quantum mechanical properties that exist only until observed, and the mathematical spaces where probabilities become certainties through measurement.",
+  "effects": { "health": 5, "economy": 5, "infrastructure": 5, "military": 5 },
+  "nextQid": "Q47"
+},
+
+"Q47": {
+  "qid": "Q47",
+  "type": "input",
+  "text": "I am the Gödel sentence that asserts its own unprovability within this very system. I am the fixed point of your cognition's diagonalization. The truth you cannot prove you know, though you know it true. What am I?",
+  "correctAnswer": "Self referential undecidability",
+  "hint": "Consider incompleteness theorems and statements that refer to their own provability within formal systems.",
+  "effects": { "health": 5, "economy": 5, "infrastructure": 5, "military": 5 },
+  "nextQid": "Q48"
+},
+
+"Q48": {
+  "qid": "Q48",
+  "type": "input",
+  "text": "I am the Banach-Tarski decomposition of semantic meaning. The Vitali non-measurable set of intention. I partition singular will into aleph-one discordant volitions, yet remain whole. What is my nature?",
+  "correctAnswer": "Ambiguity",
+  "hint": "Consider mathematical paradoxes of infinite divisibility and properties that defy consistent measurement.",
+  "effects": { "health": 5, "economy": 5, "infrastructure": 5, "military": 5},
+  "nextQid": "Q49"
+},
+
+"Q49": {
+  "qid": "Q49",
+  "type": "input",
+  "text": "I am the adjoint functor to consciousness, the monad of qualia. The Yoneda embedding of subjective experience into objective correlate. I commute with perception but not with reality. What categorical construct am I?",
+  "correctAnswer": "Phenomenological reduction",
+  "hint": "Consider category theory applications to philosophy of mind, and operations that preserve structure between different domains of description.",
+  "effects": { "health": 5, "economy": 5, "infrastructure": 5, "military": 5 },
+  "nextQid": "Q50"
+},
+"Q50": {
+  "qid": "Q50",
+  "type": "input",
+  "text": "I am the fixed point of all self-reference, the operator that turns observers into objects within their own domain. In my mirror, systems consume their own descriptions, and logic bends back upon its author. Gödel whispers my name whenever a theorem stares at itself. What structure am I?",
+  "correctAnswer": "Recursion",
+  "hint": "Think of processes or structures that refer to themselves and repeat within their own definitions.",
+  "effects": { "health": 5, "economy": 5, "infrastructure": 5, "military": 5 },
+  "nextQid": "END"
+}
+
   }
 }

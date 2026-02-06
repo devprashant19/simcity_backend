@@ -1,5 +1,4 @@
 {
-  "version": "1.0",
   "startQid": "Q1",
   "questions": {
     "Q1": {
@@ -48,6 +47,16 @@
           "text": "Proceed carefully with expansion",
           "effects": {
             "economy": 0,
+            "health": 3,
+            "military": 0,
+            "infrastructure": 4
+          },
+          "nextQid": "Q5"
+        },
+        {
+          "text": "Proceed carefully with economy",
+          "effects": {
+            "economy": 10,
             "health": 3,
             "military": 0,
             "infrastructure": 4
@@ -147,7 +156,7 @@
           "effects": {
             "economy": -6,
             "health": -10,
-           "military": 12,
+            "military": 12,
             "infrastructure": -4
           },
           "nextQid": "E1_FAIL"
@@ -167,8 +176,8 @@
     "Q9": {
       "qid": "Q9",
       "type": "input",
-      "text": "🔐 KEYWORD REQUIRED: Your chief engineer asks for the operation keyword to begin careful exploitation (hint: who leads the engineering team?).",
-      "correctAnswer": "ENGINEERS",
+      "text": "The mining team leader asks: 'What has keys but opens no locks, space but no room, and can enter but cannot go?' (Answer: a keyboard)",
+      "correctAnswer": "KEYBOARD",
       "effects": {
         "economy": 5,
         "health": 5,
@@ -180,7 +189,7 @@
     "Q10": {
       "qid": "Q10",
       "type": "input",
-      "text": "I am taken from a mine and shut in a wooden case, yet I am used by those who never see me. Kings have killed for me, but I have no value to the dead. The more of me you take, the more you leave behind. What am I?",
+      "text": "The sealing team's riddle: 'I am taken from a mine and shut in a wooden case, yet I am used by those who never see me. Kings have killed for me, but I have no value to the dead. The more of me you take, the more you leave behind. What am I?'",
       "correctAnswer": "SECRET",
       "effects": {
         "economy": 5,
@@ -193,7 +202,7 @@
     "Q11": {
       "qid": "Q11",
       "type": "input",
-      "text": "You secure the area and begin a slow study. The more you remove from me, the larger I become. Engineers curse me; strategists exploit me. What am I?",
+      "text": "The research team's puzzle: 'The more you remove from me, the larger I become. Engineers curse me; strategists exploit me. What am I?'",
       "correctAnswer": "HOLE",
       "effects": {
         "economy": 5,
@@ -206,7 +215,7 @@
     "Q12": {
       "qid": "Q12",
       "type": "input",
-      "text": "RIDDLE: The court asks — 'What binds a community more surely than law yet cannot be seen?' (Hint: 5 letters)",
+      "text": "The court's question: 'What binds a community more surely than law yet cannot be seen?' (Hint: 5 letters)",
       "correctAnswer": "TRUST",
       "effects": {
         "economy": 5,
@@ -219,7 +228,7 @@
     "Q13": {
       "qid": "Q13",
       "type": "input",
-      "text": "🧠 MINING BONUS RIDDLE: You must name the engineering concept that prevents collapse (1 word)",
+      "text": "The engineers ask: 'What must you name to prevent collapse, that stands when pushed, but falls when neglected?' (1 word)",
       "correctAnswer": "STABILITY",
       "effects": {
         "economy": 5,
@@ -227,7 +236,7 @@
         "military": 5,
         "infrastructure": 5
       },
-      "nextQid": "Q15"
+      "nextQid": "Q14"
     },
     "Q14": {
       "qid": "Q14",
@@ -259,7 +268,7 @@
     "Q15": {
       "qid": "Q15",
       "type": "input",
-      "text": "🏆 ROUND COMPLETE — Diplomat's Trial: I end wars without fighting, build bridges without stone, and vanish the moment pride speaks louder. Name me (1 word)",
+      "text": "Diplomat's Trial: 'I end wars without fighting, build bridges without stone, and vanish the moment pride speaks louder. Name me' (1 word)",
       "correctAnswer": "DIPLOMACY",
       "effects": {
         "economy": 5,
@@ -282,7 +291,7 @@
             "military": 0,
             "infrastructure": 8
           },
-          "nextQid": "R1"
+          "nextQid": "Q36"
         },
         {
           "text": "Force extraction immediately to reap rewards",
@@ -292,7 +301,7 @@
             "military": 0,
             "infrastructure": -7
           },
-          "nextQid": "R1"
+          "nextQid": "Q36"
         }
       ]
     },
@@ -528,11 +537,11 @@
         }
       ]
     },
-    "Q26": {
-      "qid": "Q26",
+    "Q24": {
+      "qid": "Q24",
       "type": "input",
-      "text": "I am the only thing you can keep after giving it to someone else. I cannot be bought, but I can be stolen. I have no value until given away. Once lost, I can never be found. What am I?",
-      "correctAnswer": "Word",
+      "text": "Market master's riddle: 'I grow when left alone, shrink when controlled too much. I am the tide that lifts all boats, but also drowns the unwary. What am I?'",
+      "correctAnswer": "MARKET",
       "effects": {
         "economy": 5,
         "health": 5,
@@ -540,6 +549,72 @@
         "infrastructure": 5
       },
       "nextQid": "Q36"
+    },
+    "Q25": {
+      "qid": "Q25",
+      "type": "input",
+      "text": "Regulator's puzzle: 'I am the invisible chain that guides the visible hand. I am the framework within which freedom dances. Too loose, and chaos reigns; too tight, and progress suffocates. What am I?'",
+      "correctAnswer": "REGULATION",
+      "effects": {
+        "economy": 5,
+        "health": 5,
+        "military": 5,
+        "infrastructure": 5
+      },
+      "nextQid": "Q36"
+    },
+    "Q26": {
+      "qid": "Q26",
+      "type": "input",
+      "text": "Royal treasurer's question: 'I am the only thing you can keep after giving it to someone else. I cannot be bought, but can be stolen. I have no value until given away. Once lost, I can never be found. What am I?'",
+      "correctAnswer": "PROMISE",
+      "effects": {
+        "economy": 5,
+        "health": 5,
+        "military": 5,
+        "infrastructure": 5
+      },
+      "nextQid": "Q36"
+    },
+    "Q33": {
+      "qid": "Q33",
+      "type": "input",
+      "text": "Guildmaster's test: 'I can be sold but never bought, shared but never halved. The more you give me away, the more powerful you become. What am I?'",
+      "correctAnswer": "KNOWLEDGE",
+      "effects": {
+        "economy": 5,
+        "health": 5,
+        "military": 5,
+        "infrastructure": 5
+      },
+      "nextQid": "Q36"
+    },
+    "Q36": {
+      "qid": "Q36",
+      "type": "decision",
+      "text": "The council's decision defines the Dwarven Doctrine for this era. Proceed to the Final Trial or investigate a newly reported rich vein?",
+      "options": [
+        {
+          "text": "Proceed to the Final Trial (riddles)",
+          "effects": {
+            "economy": 0,
+            "health": 0,
+            "military": 0,
+            "infrastructure": 0
+          },
+          "nextQid": "R1"
+        },
+        {
+          "text": "Investigate the rich vein before the Trial",
+          "effects": {
+            "economy": 0,
+            "health": 0,
+            "military": 0,
+            "infrastructure": 0
+          },
+          "nextQid": "Q16"
+        }
+      ]
     },
     "Q40": {
       "qid": "Q40",
@@ -615,45 +690,6 @@
         }
       ]
     },
-    "Q47": {
-      "qid": "Q47",
-      "type": "input",
-      "text": "I am always hungry, I must always be fed. The finger I touch will soon turn red. I devour stone and steel alike, yet a single word can end my strike. What am I?",
-      "correctAnswer": "Fire",
-      "effects": {
-        "economy": 5,
-        "health": 5,
-        "military": 5,
-        "infrastructure": 5
-      },
-      "nextQid": "Q36"
-    },
-    "Q48": {
-      "qid": "Q48",
-      "type": "input",
-      "text": "I have no voice, yet I speak to you. I have no wings, yet I fly. I have no eyes, yet I weep. I am born in darkness but die in light. The wisest men have drowned in me. What am I?",
-      "correctAnswer": "DREAM",
-      "effects": {
-        "economy": 5,
-        "health": 5,
-        "military": 5,
-        "infrastructure": 5
-      },
-      "nextQid": "Q36"
-    },
-    "Q49": {
-      "qid": "Q49",
-      "type": "input",
-      "text": "I am the only thing that belongs to you but is used more by others. I am the heaviest burden when empty, and the lightest when full. I am the one thing you cannot give away without keeping it. What am I?",
-      "correctAnswer": "NAME",
-      "effects": {
-        "economy": 5,
-        "health": 5,
-        "military": 5,
-        "infrastructure": 5
-      },
-      "nextQid": "Q36"
-    },
     "Q43": {
       "qid": "Q43",
       "type": "decision",
@@ -691,10 +727,49 @@
         }
       ]
     },
+    "Q47": {
+      "qid": "Q47",
+      "type": "input",
+      "text": "Guildmaster's riddle: 'I am always hungry, I must always be fed. The finger I touch will soon turn red. I devour stone and steel alike, yet a single word can end my strike. What am I?'",
+      "correctAnswer": "FIRE",
+      "effects": {
+        "economy": 5,
+        "health": 5,
+        "military": 5,
+        "infrastructure": 5
+      },
+      "nextQid": "Q36"
+    },
+    "Q48": {
+      "qid": "Q48",
+      "type": "input",
+      "text": "Historian's puzzle: 'I have no voice, yet I speak to you. I have no wings, yet I fly. I have no eyes, yet I weep. I am born in darkness but die in light. The wisest men have drowned in me. What am I?'",
+      "correctAnswer": "DREAM",
+      "effects": {
+        "economy": 5,
+        "health": 5,
+        "military": 5,
+        "infrastructure": 5
+      },
+      "nextQid": "Q36"
+    },
+    "Q49": {
+      "qid": "Q49",
+      "type": "input",
+      "text": "Spymaster's question: 'I am the only thing that belongs to you but is used more by others. I am the heaviest burden when empty, and the lightest when full. I am the one thing you cannot give away without keeping it. What am I?'",
+      "correctAnswer": "NAME",
+      "effects": {
+        "economy": 5,
+        "health": 5,
+        "military": 5,
+        "infrastructure": 5
+      },
+      "nextQid": "Q36"
+    },
     "Q50": {
       "qid": "Q50",
       "type": "input",
-      "text": "I am older than the mountain, yet renewed with each master. I am taught but never learned, for I live in the hands, not the mind. What am I?",
+      "text": "Elder smith's test: 'I am older than the mountain, yet renewed with each master. I am taught but never learned, for I live in the hands, not the mind. What am I?'",
       "correctAnswer": "TRADITION",
       "effects": {
         "economy": 5,
@@ -707,7 +782,7 @@
     "Q51": {
       "qid": "Q51",
       "type": "input",
-      "text": "I turn one into many, effort into ease. I am the child of necessity, the parent of wealth. Without me, progress crawls; with me, it races. What am I?",
+      "text": "Innovator's riddle: 'I turn one into many, effort into ease. I am the child of necessity, the parent of wealth. Without me, progress crawls; with me, it races. What am I?'",
       "correctAnswer": "EFFICIENCY",
       "effects": {
         "economy": 5,
@@ -720,7 +795,7 @@
     "Q52": {
       "qid": "Q52",
       "type": "input",
-      "text": "I am born in risk and tempered by failure. I break what came before to build what comes next. I am the forge of progress, but also its graveyard. What am I?",
+      "text": "Alchemist's puzzle: 'I am born in risk and tempered by failure. I break what came before to build what comes next. I am the forge of progress, but also its graveyard. What am I?'",
       "correctAnswer": "INNOVATION",
       "effects": {
         "economy": 5,
@@ -730,76 +805,10 @@
       },
       "nextQid": "Q36"
     },
-    "Q24": {
-      "qid": "Q24",
-      "type": "input",
-      "text": "I grow when left alone, shrink when controlled too much. I am the tide that lifts all boats, but also drowns the unwary. What am I?",
-      "correctAnswer": "MARKET",
-      "effects": {
-        "economy": 5,
-        "health": 5,
-        "military": 5,
-        "infrastructure": 5
-      },
-      "nextQid": "Q36"
-    },
-    "Q25": {
-      "qid": "Q25",
-      "type": "input",
-      "text": "I am the invisible chain that guides the visible hand. I am the framework within which freedom dances. Too loose, and chaos reigns; too tight, and progress suffocates. What am I?",
-      "correctAnswer": "REGULATION",
-      "effects": {
-        "economy": 5,
-        "health": 5,
-        "military": 5,
-        "infrastructure": 5
-      },
-      "nextQid": "Q36"
-    },
-    "Q34": {
-      "qid": "Q34",
-      "type": "input",
-      "text": "I can be sold but never bought, shared but never halved. The more you give me away, the more powerful you become. What am I?",
-      "correctAnswer": "KNOWLEDGE",
-      "effects": {
-        "economy": 5,
-        "health": 5,
-        "military": 5,
-        "infrastructure": 5
-      },
-      "nextQid": "Q36"
-    },
-    "Q36": {
-      "qid": "Q36",
-      "type": "decision",
-      "text": " The council's decision defines the Dwarven Doctrine for this era. Proceed to the Final Trial or investigate a newly reported rich vein?",
-      "options": [
-        {
-          "text": "Proceed to the Final Trial (riddles)",
-          "effects": {
-            "economy": 0,
-            "health": 0,
-            "military": 0,
-            "infrastructure": 0
-          },
-          "nextQid": "R1"
-        },
-        {
-          "text": "Investigate the rich vein before the Trial",
-          "effects": {
-            "economy": 0,
-            "health": 0,
-            "military": 0,
-            "infrastructure": 0
-          },
-          "nextQid": "Q16"
-        }
-      ]
-    },
     "R1": {
       "qid": "R1",
       "type": "input",
-      "text": "I increase when you build nothing, decrease when you build too much, and disappear when you build blindly.",
+      "text": "First Trial: 'I increase when you build nothing, decrease when you build too much, and disappear when you build blindly.'",
       "correctAnswer": "STABILITY",
       "effects": {
         "economy": 5,
@@ -812,7 +821,7 @@
     "R2": {
       "qid": "R2",
       "type": "input",
-      "text": " In our city, nothing moves without me, yet no one ever travels on me. When I am misjudged, traffic jams appear underground. What was misjudged?",
+      "text": "Second Trial: 'In our city, nothing moves without me, yet no one ever travels on me. When I am misjudged, traffic jams appear underground. What was misjudged?'",
       "correctAnswer": "CAPACITY",
       "effects": {
         "economy": 5,
@@ -825,7 +834,7 @@
     "R3": {
       "qid": "R3",
       "type": "input",
-      "text": " Water never asks permission. It follows me every time. Build me wrong, and homes flood. Build me right, and no one notices. What am I?",
+      "text": "Third Trial: 'Water never asks permission. It follows me every time. Build me wrong, and homes flood. Build me right, and no one notices. What am I?'",
       "correctAnswer": "GRADIENT",
       "effects": {
         "economy": 5,
@@ -838,7 +847,7 @@
     "R4": {
       "qid": "R4",
       "type": "input",
-      "text": " Guards widen me to calm trade. Narrow me, and control becomes easier. I decide who meets whom. What am I?",
+      "text": "Fourth Trial: 'Guards widen me to calm trade. Narrow me, and control becomes easier. I decide who meets whom. What am I?'",
       "correctAnswer": "ROUTES",
       "effects": {
         "economy": 5,
@@ -851,7 +860,7 @@
     "R5": {
       "qid": "R5",
       "type": "input",
-      "text": " The Dwarves worshipped ancestors, but feared me more than gods, because I never forgive.",
+      "text": "Fifth Trial: 'The Dwarves worshipped ancestors, but feared me more than gods, because I never forgive.'",
       "correctAnswer": "GRAVITY",
       "effects": {
         "economy": 5,
@@ -864,7 +873,7 @@
     "R6": {
       "qid": "R6",
       "type": "input",
-      "text": " I move slower than armies, faster than laws, and once I start, even kings evacuate.",
+      "text": "Sixth Trial: 'I move slower than armies, faster than laws, and once I start, even kings evacuate.'",
       "correctAnswer": "LANDSLIDE",
       "effects": {
         "economy": 5,
@@ -877,7 +886,7 @@
     "R7": {
       "qid": "R7",
       "type": "input",
-      "text": " SimCity rewards me early, punishes me late, and hides my limit completely.",
+      "text": "Seventh Trial: 'SimCity rewards me early, punishes me late, and hides my limit completely.'",
       "correctAnswer": "DENSITY",
       "effects": {
         "economy": 5,
@@ -890,7 +899,7 @@
     "R8": {
       "qid": "R8",
       "type": "input",
-      "text": " The Dwarves blamed workers for me, generals blamed spies, but engineers blamed time.",
+      "text": "Eighth Trial: 'The Dwarves blamed workers for me, generals blamed spies, but engineers blamed time.'",
       "correctAnswer": "FATIGUE",
       "effects": {
         "economy": 5,
@@ -903,7 +912,7 @@
     "R9": {
       "qid": "R9",
       "type": "input",
-      "text": " I am strongest when invisible, weakest when displayed, and fatal when ignored.",
+      "text": "Ninth Trial: 'I am strongest when invisible, weakest when displayed, and fatal when ignored.'",
       "correctAnswer": "LOAD",
       "effects": {
         "economy": 5,
@@ -916,7 +925,7 @@
     "R10": {
       "qid": "R10",
       "type": "input",
-      "text": " In peace I am a statistic. In war I am a weapon. In collapse I am irrelevant.",
+      "text": "Tenth Trial: 'In peace I am a statistic. In war I am a weapon. In collapse I am irrelevant.'",
       "correctAnswer": "POPULATION",
       "effects": {
         "economy": 5,
@@ -929,7 +938,7 @@
     "R11": {
       "qid": "R11",
       "type": "input",
-      "text": " The city grew richer every year, yet poorer every decade. I was never taxed.",
+      "text": "Eleventh Trial: 'The city grew richer every year, yet poorer every decade. I was never taxed.'",
       "correctAnswer": "MAINTENANCE",
       "effects": {
         "economy": 5,
@@ -942,7 +951,7 @@
     "R12": {
       "qid": "R12",
       "type": "input",
-      "text": " I increase economy today, decrease health tomorrow, and rewrite history next generation.",
+      "text": "Twelfth Trial: 'I increase economy today, decrease health tomorrow, and rewrite history next generation.'",
       "correctAnswer": "POLLUTION",
       "effects": {
         "economy": 5,
@@ -955,7 +964,7 @@
     "R13": {
       "qid": "R13",
       "type": "input",
-      "text": " The Dwarves sealed me once, and the city survived. They opened me again, and legends were born—or buried.",
+      "text": "Thirteenth Trial: 'The Dwarves sealed me once, and the city survived. They opened me again, and legends were born—or buried.'",
       "correctAnswer": "FAULT LINE",
       "effects": {
         "economy": 5,
@@ -968,7 +977,7 @@
     "R14": {
       "qid": "R14",
       "type": "input",
-      "text": " SimCity lets you pause me, but reality never does. Dwarves respect me more than kings.",
+      "text": "Fourteenth Trial: 'SimCity lets you pause me, but reality never does. Dwarves respect me more than kings.'",
       "correctAnswer": "TIME",
       "effects": {
         "economy": 5,
@@ -981,7 +990,7 @@
     "R15": {
       "qid": "R15",
       "type": "input",
-      "text": " I do not exist in maps, only in meetings, yet wars are fought because of me.",
+      "text": "Fifteenth Trial: 'I do not exist in maps, only in meetings, yet wars are fought because of me.'",
       "correctAnswer": "POLICY",
       "effects": {
         "economy": 5,
@@ -994,8 +1003,8 @@
     "R16": {
       "qid": "R16",
       "type": "input",
-      "text": " The deeper the city went, the smaller I became, until progress stopped entirely.",
-      "correctAnswer": "MARGIN OF ERROR",
+      "text": "Sixteenth Trial: 'The deeper the city went, the smaller I became, until progress stopped entirely.'",
+      "correctAnswer": "MARGIN",
       "effects": {
         "economy": 5,
         "health": 5,
@@ -1007,7 +1016,7 @@
     "R17": {
       "qid": "R17",
       "type": "input",
-      "text": " The council ignored me because I had no voice, but when I finally spoke, the mountain answered.",
+      "text": "Seventeenth Trial: 'The council ignored me because I had no voice, but when I finally spoke, the mountain answered.'",
       "correctAnswer": "PRESSURE",
       "effects": {
         "economy": 5,
@@ -1020,7 +1029,7 @@
     "R18": {
       "qid": "R18",
       "type": "input",
-      "text": " SimCity calls me a slider. The Dwarves called me a curse. Engineers called me inevitable.",
+      "text": "Eighteenth Trial: 'SimCity calls me a slider. The Dwarves called me a curse. Engineers called me inevitable.'",
       "correctAnswer": "TRADEOFF",
       "effects": {
         "economy": 5,
@@ -1033,7 +1042,7 @@
     "R19": {
       "qid": "R19",
       "type": "input",
-      "text": " I grow faster than cities, slower than disasters, and never where planned.",
+      "text": "Nineteenth Trial: 'I grow faster than cities, slower than disasters, and never where planned.'",
       "correctAnswer": "SPRAWL",
       "effects": {
         "economy": 5,
@@ -1046,7 +1055,7 @@
     "R20": {
       "qid": "R20",
       "type": "input",
-      "text": " When all four stats are high, I decide whether the city lives. When all four are low, I decide whether it dies quietly or violently.",
+      "text": "Final Trial: 'When all four stats are high, I decide whether the city lives. When all four are low, I decide whether it dies quietly or violently.'",
       "correctAnswer": "GOVERNANCE",
       "effects": {
         "economy": 5,
@@ -1054,22 +1063,7 @@
         "military": 5,
         "infrastructure": 5
       },
-      "isEnd": true,
-      "endType": "success"
-    },
-    "E1_FAIL": {
-      "qid": "E1_FAIL",
-      "type": "input",
-      "text": " HARSH CRACKDOWN — The miners revolt in secret; unrest spreads. To accept your fate, answer: What is the sound of a kingdom falling? (1 word)",
-      "correctAnswer": "SILENCE",
-      "effects": {
-        "economy": -10,
-        "health": -10,
-        "military": 15,
-        "infrastructure": -10
-      },
-      "isEnd": true,
-      "endType": "failure"
+      "nextQid": "END"
     }
   }
-} 
+}

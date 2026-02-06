@@ -15,11 +15,12 @@ const userSchema = new mongoose.Schema(
     password: { type: String, required: true },
 
     power: {
-      economy: { type: Number, default: 10 },
-      military: { type: Number, default: 10 },
-      health: { type: Number, default: 10 },
-      infrastructure: { type: Number, default: 10 }
+      economy: { type: Number, default: 50 },
+      military: { type: Number, default: 50 },
+      health: { type: Number, default: 50 },
+      infrastructure: { type: Number, default: 50 }
     },
+
 
     // New Fields for Persistence
     faction: {
