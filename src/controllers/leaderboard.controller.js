@@ -13,11 +13,12 @@ exports.infrastructureLeaderboard = async (req, res) => {
 
     // 2. Calculate Total Power & Sort in JS (easier than Aggregate for simple summation)
     const sortedUsers = users.map(user => {
+      const power = user.power || {};
       const totalPower =
-        (user.power.economy || 0) +
-        (user.power.military || 0) +
-        (user.power.health || 0) +
-        (user.power.infrastructure || 0);
+        (power.economy || 0) +
+        (power.military || 0) +
+        (power.health || 0) +
+        (power.infrastructure || 0);
 
       return {
         ...user.toObject(),

@@ -32,7 +32,7 @@ exports.upgradePower = async (req, res) => {
 
     // Calculate Total Cost
     // Cost is 5 Economy per 1 Point
-    const COST_PER_POINT = 5;
+    const COST_PER_POINT = 1;
     const totalPointsToBuy = military + health + infrastructure;
 
     if (totalPointsToBuy <= 0) {

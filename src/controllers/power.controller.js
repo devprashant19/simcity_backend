@@ -84,7 +84,7 @@ exports.sendAid = async (req, res) => {
     }
 
     // Cost Config
-    const AID_COST = 5; // Economy
+    const AID_COST = 2; // Economy
     const AID_GAIN = 8; // Economy (Boosted!)
 
     if (user.power.economy < AID_COST) {
