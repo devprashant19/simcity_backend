@@ -27,6 +27,41 @@ exports.attack = async (req, res) => {
   });
 };
 
+// REQUEST HELP
+exports.requestHelp = async (req, res) => {
+  try {
+    const { battleId, helperIds } = req.body;
+    const userId = req.user.id;
+
+    const battle = await Battle.findById(battleId);
+    if (!battle) return res.status(404).json({ message: "Battle not found" });
+
+    if (battle.defender.toString() !== userId) {
+      return res.status(403).json({ message: "Only the defender can request help" });
+    }
+
+    if (battle.status !== "pending") {
+      return res.status(400).json({ message: "Battle is already resolved" });
+    }
+
+    if (!Array.isArray(helperIds) || helperIds.length === 0) {
+      return res.status(400).json({ message: "No helpers specified" });
+    }
+
+    const newRequests = helperIds.map(hid => ({
+      to: hid,
+      status: "pending"
+    }));
+
+    battle.helpRequests.push(...newRequests);
+    await battle.save();
+
+    res.json({ message: "Help requests sent", battle });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+};
+
 // ACCEPT HELP
 // exports.acceptHelp = async (req, res) => {
 //   const helperId = req.user.id;
@@ -92,6 +127,13 @@ exports.resolveBattle = async (req, res) => {
 
   if (!battle || battle.status === "resolved")
     return res.status(400).json({ message: "Invalid battle" });
+
+  if (Date.now() < battle.expiresAt) {
+    return res.status(400).json({
+      message: "Battle is still ongoing!",
+      expiresAt: battle.expiresAt
+    });
+  }
 
   const attacker = battle.attacker;
   const defender = battle.defender;
