@@ -16,7 +16,7 @@ exports.attackUser = async (req, res) => {
         }
 
         // Initialize if undefined
-        if (attacker.attacksLeft === undefined) attacker.attacksLeft = 3;
+        if (attacker.attacksLeft === undefined) attacker.attacksLeft = 5;
 
         // check attacks left
         if (attacker.attacksLeft <= 0) {
