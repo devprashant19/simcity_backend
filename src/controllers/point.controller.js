@@ -143,3 +143,23 @@ exports.sendAid = async (req, res) => {
     res.status(500).json({ error: err.message });
   }
 };
+
+/**
+ * Fetch current user stats and limits
+ */
+exports.getStats = async (req, res) => {
+  try {
+    const user = await User.findById(req.user.id);
+    if (!user) return res.status(404).json({ message: "User not found" });
+
+    res.json({
+      power: user.power,
+      attacksLeft: user.attacksLeft,
+      helpLeft: user.helpLeft,
+      faction: user.faction,
+      finished: user.finished
+    });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+};
