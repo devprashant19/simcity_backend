@@ -1,13 +1,30 @@
 const User = require("../models/User");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
+const admin = require("../config/firebase");
 
 /**
  * Firebase UID based signup/login
  */
 exports.firebaseAuth = async (req, res) => {
   try {
-    const { firebaseUid, username, email, password, emailVerified } = req.body;
+    const { idToken, firebaseUid, username, email, password, emailVerified } = req.body;
+
+    // --- Token Verification ---
+    if (idToken && admin.apps.length > 0) {
+      try {
+        const decodedToken = await admin.auth().verifyIdToken(idToken);
+        if (decodedToken.uid !== firebaseUid) {
+          return res.status(401).json({ message: "Security Alert: UID mismatch detected." });
+        }
+      } catch (err) {
+        console.error("Token verification failed:", err.message);
+        return res.status(401).json({ message: "Authentication failed: Invalid security token." });
+      }
+    } else if (process.env.NODE_ENV === "production") {
+      return res.status(401).json({ message: "Security token required." });
+    }
+    // ---------------------------
 
     if (!firebaseUid || !username || !email || !password) {
       return res.status(400).json({ message: "All fields required" });
