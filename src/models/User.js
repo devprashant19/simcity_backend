@@ -33,6 +33,7 @@ const userSchema = new mongoose.Schema(
 
     attacksLeft: { type: Number, default: 5 },
     helpLeft: { type: Number, default: 5 },
+    lastResetDate: { type: Date, default: Date.now },
 
     finished: { type: Boolean, default: false }
   },

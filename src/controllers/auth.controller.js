@@ -39,10 +39,24 @@ exports.firebaseAuth = async (req, res) => {
         return res.status(403).json({ message: "Email not verified. Please check your inbox." });
       }
 
-      // 🔹 BACKFILL DEFAULTS (for existing users)
-      if (user.attacksLeft === undefined || user.helpLeft === undefined) {
+      // 🔹 DAILY RESET & BACKFILL
+      const now = new Date();
+      const lastReset = new Date(user.lastResetDate || 0);
+      
+      // If it's a different day (UTC), reset limits
+      if (now.getUTCDate() !== lastReset.getUTCDate() || 
+          now.getUTCMonth() !== lastReset.getUTCMonth() || 
+          now.getUTCFullYear() !== lastReset.getUTCFullYear()) {
+        user.attacksLeft = 5;
+        user.helpLeft = 5;
+        user.lastResetDate = now;
+      } else if (user.attacksLeft === undefined || user.helpLeft === undefined) {
+        // Just backfill if undefined but same day
         user.attacksLeft = user.attacksLeft ?? 5;
         user.helpLeft = user.helpLeft ?? 5;
+      }
+      
+      if (user.isModified()) {
         await user.save();
       }
 
