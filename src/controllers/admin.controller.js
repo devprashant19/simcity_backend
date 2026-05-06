@@ -1,12 +1,6 @@
 const WarState = require("../models/WarState");
 
 exports.toggleWar = async (req, res) => {
-  // Debugging: Log what we received
-  console.log("POST /admin/war received:");
-  console.log("Headers (Content-Type):", req.headers['content-type']);
-  console.log("Body:", req.body);
-  console.log("Query:", req.query);
-
   const body = req.body || {};
   const query = req.query || {};
 
@@ -15,10 +9,7 @@ exports.toggleWar = async (req, res) => {
 
   if (enabled === undefined) {
     return res.status(400).json({
-      message: "Field 'enabled' (true/false) is required.",
-      receivedBody: body,
-      receivedQuery: query,
-      hint: "Ensure you are using 'x-www-form-urlencoded' in Body, OR adding '?enabled=true' to the URL."
+      message: "Field 'enabled' (true/false) is required."
     });
   }
 

@@ -3,7 +3,6 @@ const jwt = require("jsonwebtoken");
 module.exports = (req, res, next) => {
   const token = req.headers.authorization?.split(" ")[1];
   if (!token) {
-    console.log("[DEBUG] Auth Failed: No token provided");
     return res.status(401).json({ message: "No token" });
   }
 
@@ -12,7 +11,6 @@ module.exports = (req, res, next) => {
     req.user = decoded;
     next();
   } catch (err) {
-    console.log(`[DEBUG] Auth Failed: ${err.message}`);
     res.status(401).json({ message: "Invalid token" });
   }
 };

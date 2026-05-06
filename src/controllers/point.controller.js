@@ -1,4 +1,5 @@
 const User = require("../models/User");
+const mongoose = require("mongoose");
 
 const COST = {
   military: 1,
@@ -101,7 +102,9 @@ exports.sendAid = async (req, res) => {
     const userId = req.user.id;
     const { targetId } = req.body;
 
-    if (!targetId) return res.status(400).json({ message: "Target required" });
+    if (!targetId || !mongoose.Types.ObjectId.isValid(targetId)) {
+      return res.status(400).json({ message: "Invalid target ID format" });
+    }
     if (userId === targetId) return res.status(400).json({ message: "Cannot aid yourself" });
 
     const user = await User.findById(userId);

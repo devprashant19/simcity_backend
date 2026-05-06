@@ -1,9 +1,14 @@
 const User = require("../models/User");
+const mongoose = require("mongoose");
 
 exports.attackUser = async (req, res) => {
     try {
         const attackerId = req.user.id;
         const { defenderId } = req.body;
+
+        if (!defenderId || !mongoose.Types.ObjectId.isValid(defenderId)) {
+            return res.status(400).json({ message: "Invalid target ID format" });
+        }
 
         const attacker = await User.findById(attackerId);
         const defender = await User.findById(defenderId);
