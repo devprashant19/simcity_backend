@@ -25,5 +25,6 @@ app.use("/api/attack", require("./routes/attack.routes"));
 app.use("/api/war", require("./routes/war.routes"));
 app.use("/api/battle", battleRoutes);
 app.use("/api/admin", adminRoutes);
+app.use("/api/advisor", require("./routes/advisor.routes"));
 
 module.exports = app;
